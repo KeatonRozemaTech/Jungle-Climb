@@ -1,0 +1,57 @@
+{
+	"name": "SpringBoots",
+	"plugin-id": "Sprite",
+	"sid": 740547884306076,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 624666,
+						"collisionPoly": {
+							"points": [
+								0.1702127659574468,
+								0.18181818181818182,
+								0.5,
+								0,
+								0.8723404255319149,
+								0.11363636363636363,
+								0.9574468085106383,
+								0.5,
+								0.8085106382978723,
+								0.7954545454545454,
+								0.5,
+								0.9772727272727273,
+								0.10638297872340426,
+								0.8636363636363636,
+								0.10638297872340426,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 406646244606525,
+				"name": "Main",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

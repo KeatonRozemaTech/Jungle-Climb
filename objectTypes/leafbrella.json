@@ -1,0 +1,57 @@
+{
+	"name": "LeafBrella",
+	"plugin-id": "Sprite",
+	"sid": 905062672515476,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 22,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9536650,
+						"collisionPoly": {
+							"points": [
+								0.18181818181818182,
+								0.2,
+								0.5,
+								0,
+								0.9545454545454546,
+								0,
+								0.8636363636363636,
+								0.5,
+								0.6818181818181818,
+								0.65,
+								0.5,
+								0.8,
+								0.045454545454545456,
+								0.9,
+								0.13636363636363635,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 286845407743177,
+				"name": "Main",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

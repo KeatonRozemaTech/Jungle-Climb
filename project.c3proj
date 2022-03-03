@@ -5,21 +5,10 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [
-		{
-			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r285",
-			"bundled": false
-		}
-	],
+	"usedAddons": [],
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
-		"items": [
-			"Sprite"
-		],
+		"items": [],
 		"subfolders": []
 	},
 	"autosaveData": null,

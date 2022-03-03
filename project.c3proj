@@ -13,12 +13,22 @@
 			"author": "Scirra",
 			"version": "r285",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r285",
+			"bundled": false
 		}
 	],
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife"
+			"Clife",
+			"Background",
+			"Tilemap"
 		],
 		"subfolders": [
 			{

@@ -7,6 +7,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
 					"type": "Clife",
 					"properties": {
 						"initially-visible": true,
@@ -19,10 +48,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 66,
-						"y": 76,
-						"width": 30,
-						"height": 33,
+						"x": 875,
+						"y": 333,
+						"width": 90,
+						"height": 99,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -48,10 +77,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 241,
-						"y": 172,
-						"width": 32,
-						"height": 32,
+						"x": 376,
+						"y": 194,
+						"width": 112,
+						"height": 112,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -193,8 +222,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 208,
-						"y": 297,
+						"x": 588,
+						"y": 243,
 						"width": 40,
 						"height": 44,
 						"originX": 0.5,
@@ -222,10 +251,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 330,
-						"y": 338,
-						"width": 32,
-						"height": 32,
+						"x": 796,
+						"y": 424,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -235,6 +264,54 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 120,
+							"height": 67,
+							"max-width": 120,
+							"max-height": 67,
+							"data": "8040x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 3840,
+						"height": 2160,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
 						"zElevation": 0
 					}
 				}

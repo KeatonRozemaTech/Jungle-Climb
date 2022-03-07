@@ -26,9 +26,7 @@
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife",
-			"Background",
-			"Tilemap"
+			"Clife"
 		],
 		"subfolders": [
 			{
@@ -41,7 +39,9 @@
 				"name": "Gadgets"
 			},
 			{
-				"items": [],
+				"items": [
+					"Jewels"
+				],
 				"subfolders": [],
 				"name": "Jewels"
 			},
@@ -50,13 +50,17 @@
 					"Dragon",
 					"Bat",
 					"Snake",
-					"Rat"
+					"Rat",
+					"Rock"
 				],
 				"subfolders": [],
 				"name": "Enemies"
 			},
 			{
-				"items": [],
+				"items": [
+					"Platforms",
+					"Background"
+				],
 				"subfolders": [],
 				"name": "Platforms"
 			}

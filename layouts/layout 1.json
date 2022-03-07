@@ -268,7 +268,7 @@
 					}
 				},
 				{
-					"type": "Tilemap",
+					"type": "Platforms",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 32,
@@ -312,6 +312,64 @@
 							1,
 							1
 						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Jewels",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 807,
+						"y": 357,
+						"width": 37.5,
+						"height": 37.5,
+						"originX": 2,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Rock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 970,
+						"y": 445,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5078125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

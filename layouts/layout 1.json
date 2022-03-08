@@ -188,8 +188,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 344,
-						"y": 309,
+						"x": 536,
+						"y": 287,
 						"width": 88,
 						"height": 110,
 						"originX": 0.5,
@@ -217,12 +217,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 518,
-						"y": 311,
-						"width": 176,
-						"height": 176,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 498,
+						"y": 344,
+						"width": 88,
+						"height": 66,
+						"originX": 0.5625,
+						"originY": -0.4166666666666667,
 						"color": [
 							1,
 							1,
@@ -304,12 +304,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 809,
-						"y": 96,
-						"width": 110,
-						"height": 121,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1136,
+						"y": 288,
+						"width": 93.5,
+						"height": 93.5,
+						"originX": 0.5294117647058824,
+						"originY": 0.6764705882352942,
 						"color": [
 							1,
 							1,
@@ -393,10 +393,10 @@
 					"world": {
 						"x": 796,
 						"y": 424,
-						"width": 144,
-						"height": 144,
+						"width": 81,
+						"height": 49.5,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": -0.5454545454545454,
 						"color": [
 							1,
 							1,
@@ -409,6 +409,69 @@
 				}
 			],
 			"sid": 269963551120904,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 93,
+						"y": 17,
+						"width": 165,
+						"height": 55,
+						"originX": 0.3939393939393939,
+						"originY": -0.045454545454545456,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 771237322986756,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

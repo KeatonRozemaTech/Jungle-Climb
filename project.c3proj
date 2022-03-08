@@ -26,7 +26,8 @@
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife"
+			"Clife",
+			"Sprite"
 		],
 		"subfolders": [
 			{

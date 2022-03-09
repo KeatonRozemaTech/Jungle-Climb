@@ -1,0 +1,13 @@
+{
+	"name": "PowerUps",
+	"plugin-id": "Sprite",
+	"sid": 634699477818522,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"SpringBoots",
+		"WoodCapsule",
+		"LeafBrella"
+	]
+}

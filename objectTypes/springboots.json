@@ -4,7 +4,13 @@
 	"sid": 740547884306076,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 869298457993759
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

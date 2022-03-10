@@ -24,8 +24,32 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -75,8 +99,10 @@
 	"objectTypes": {
 		"items": [
 			"Clife",
-			"Sprite",
-			"Keyboard"
+			"Lives",
+			"Keyboard",
+			"Timer",
+			"PowerSlot"
 		],
 		"subfolders": [
 			{
@@ -113,6 +139,14 @@
 				],
 				"subfolders": [],
 				"name": "Platforms"
+			},
+			{
+				"items": [
+					"StartButton",
+					"StartBackground"
+				],
+				"subfolders": [],
+				"name": "Start"
 			}
 		]
 	},
@@ -120,19 +154,22 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"PowerUps"
+			"PowerUps",
+			"Enemies"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Game",
+			"Start Screen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Game Event",
+			"Start Event"
 		],
 		"subfolders": []
 	},
@@ -245,7 +282,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-inner",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -284,6 +321,6 @@
 		"cordovaAndroidScheme": "https"
 	},
 	"viewportWidth": 1000,
-	"viewportHeight": 1500,
-	"firstLayout": null
+	"viewportHeight": 750,
+	"firstLayout": "Start Screen"
 }

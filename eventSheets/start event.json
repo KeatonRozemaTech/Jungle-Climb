@@ -1,0 +1,27 @@
+{
+	"name": "Start Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "StartButton",
+					"sid": 984048683925926
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 356846514775758,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 737976461312020
+		}
+	],
+	"sid": 293294515745621
+}

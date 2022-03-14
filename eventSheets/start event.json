@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "StartButton",
+					"objectClass": "LevelSelect",
 					"sid": 984048683925926
 				}
 			],
@@ -14,13 +14,118 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 356846514775758,
+					"sid": 215608713130662,
 					"parameters": {
-						"layout": "Game"
+						"layout": "Level Select"
 					}
 				}
 			],
 			"sid": 737976461312020
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "HelpButton",
+					"sid": 820487878120301
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 997814039058292,
+					"parameters": {
+						"layout": "Help Screen"
+					}
+				}
+			],
+			"sid": 114522200209475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 358810675523207
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Button CSS",
+					"sid": 337170162224351
+				}
+			],
+			"sid": 665292597399867
+		},
+		{
+			"functionName": "Button CSS",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 158536392852744,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"7px solid black\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 793349699408814,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"darkgreen\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 319439005053767,
+					"parameters": {
+						"property-name": "\"border-radius\"",
+						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 105655872864732,
+					"parameters": {
+						"property-name": "\"color\"",
+						"value": "\"white\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 274758414271852,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"1.5em\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 590443239629418,
+					"parameters": {
+						"property-name": "\"text-align\"",
+						"value": "\"center\""
+					}
+				}
+			],
+			"sid": 810913780172707
 		}
 	],
 	"sid": 293294515745621

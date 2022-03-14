@@ -1,5 +1,5 @@
 {
-	"name": "Start Screen",
+	"name": "Help Screen",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -19,7 +19,7 @@
 						"image-scale-y": 15,
 						"image-angle": 0
 					},
-					"uid": 17,
+					"uid": 28,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -40,25 +40,35 @@
 					}
 				},
 				{
-					"type": "LevelSelect",
+					"type": "HelpText",
 					"properties": {
-						"type": "button",
-						"text": "SELECT LEVEL",
-						"tooltip": "",
+						"text": "Use W to jump, double click to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
+						"enable-bbcode": true,
+						"font": "Comic Sans MS",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
+						"origin": "top-left"
 					},
-					"uid": 16,
+					"uid": 21,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 311.5,
-						"width": 250,
-						"height": 150,
+						"x": 44,
+						"y": 131,
+						"width": 942,
+						"height": 540,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -66,14 +76,16 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "HelpButton",
+					"type": "Exitback",
 					"properties": {
 						"type": "button",
-						"text": "HELP",
+						"text": "X",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -81,14 +93,14 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 20,
+					"uid": 22,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 474,
-						"width": 250,
-						"height": 150,
+						"x": 55,
+						"y": 55,
+						"width": 60,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -100,7 +112,7 @@
 					}
 				}
 			],
-			"sid": 459710081850852,
+			"sid": 940724223789140,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -129,7 +141,7 @@
 			"global": false
 		}
 	],
-	"sid": 602372534984203,
+	"sid": 108624972679100,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2000,
@@ -138,5 +150,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Start Event"
+	"eventSheet": "Help Event"
 }

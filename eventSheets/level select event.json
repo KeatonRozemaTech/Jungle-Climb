@@ -1,0 +1,65 @@
+{
+	"name": "Level Select Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Exitback",
+					"sid": 129659955471427
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 934529035934001,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 875955276164701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Level1",
+					"sid": 362434026219495
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 506203185409571,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 760057188777471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 201746012811047
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Button CSS",
+					"sid": 407715749513764
+				}
+			],
+			"sid": 993680775124043
+		}
+	],
+	"sid": 887526160914761
+}

@@ -1,5 +1,5 @@
 {
-	"name": "Start Screen",
+	"name": "Level Select",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -19,7 +19,7 @@
 						"image-scale-y": 15,
 						"image-angle": 0
 					},
-					"uid": 17,
+					"uid": 27,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -40,10 +40,10 @@
 					}
 				},
 				{
-					"type": "LevelSelect",
+					"type": "Level1",
 					"properties": {
 						"type": "button",
-						"text": "SELECT LEVEL",
+						"text": "Level 1",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -51,14 +51,14 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 16,
+					"uid": 23,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 311.5,
-						"width": 250,
-						"height": 150,
+						"x": 100,
+						"y": 250,
+						"width": 150,
+						"height": 100,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -70,10 +70,10 @@
 					}
 				},
 				{
-					"type": "HelpButton",
+					"type": "Level2",
 					"properties": {
 						"type": "button",
-						"text": "HELP",
+						"text": "Level 2",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -81,14 +81,74 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 20,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 474,
-						"width": 250,
-						"height": 150,
+						"x": 300,
+						"y": 250,
+						"width": 150,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Level3",
+					"properties": {
+						"type": "button",
+						"text": "Level 3",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 500,
+						"y": 250,
+						"width": 150,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Exitback",
+					"properties": {
+						"type": "button",
+						"text": "X",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 55,
+						"y": 55,
+						"width": 60,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -100,7 +160,7 @@
 					}
 				}
 			],
-			"sid": 459710081850852,
+			"sid": 752580705253891,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -129,7 +189,7 @@
 			"global": false
 		}
 	],
-	"sid": 602372534984203,
+	"sid": 583719982849067,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2000,
@@ -138,5 +198,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Start Event"
+	"eventSheet": "Level Select Event"
 }

@@ -1,0 +1,44 @@
+{
+	"name": "Help Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Exitback",
+					"sid": 662238882115129
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 148010303587246,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 133343064471642
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 814856850672117
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Button CSS",
+					"sid": 498691786058424
+				}
+			],
+			"sid": 939580931771830
+		}
+	],
+	"sid": 633727005369076
+}

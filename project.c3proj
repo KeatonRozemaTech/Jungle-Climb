@@ -40,16 +40,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -102,7 +102,10 @@
 			"Lives",
 			"Keyboard",
 			"Timer",
-			"PowerSlot"
+			"PowerSlot",
+			"Text",
+			"Lava",
+			"PlayPause"
 		],
 		"subfolders": [
 			{
@@ -142,8 +145,14 @@
 			},
 			{
 				"items": [
-					"StartButton",
-					"StartBackground"
+					"LevelSelect",
+					"StartBackground",
+					"HelpButton",
+					"HelpText",
+					"Exitback",
+					"Level1",
+					"Level2",
+					"Level3"
 				],
 				"subfolders": [],
 				"name": "Start"
@@ -155,21 +164,26 @@
 	"families": {
 		"items": [
 			"PowerUps",
-			"Enemies"
+			"Enemies",
+			"Buttons"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
 			"Game",
-			"Start Screen"
+			"Start Screen",
+			"Help Screen",
+			"Level Select"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Game Event",
-			"Start Event"
+			"Start Event",
+			"Help Event",
+			"Level Select Event"
 		],
 		"subfolders": []
 	},

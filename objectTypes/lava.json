@@ -1,20 +1,20 @@
 {
-	"name": "StartBackground",
+	"name": "Lava",
 	"plugin-id": "TiledBg",
-	"sid": 366572700618408,
+	"sid": 824402676049516,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 8,
-		"height": 8,
+		"width": 31,
+		"height": 31,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4988403,
+		"imageSpriteId": 3917617,
 		"useCollisionPoly": true
 	}
 }

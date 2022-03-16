@@ -13,8 +13,8 @@
 					{
 						"width": 15,
 						"height": 15,
-						"originX": 2,
-						"originY": 0.5,
+						"originX": 0.4666666666666667,
+						"originY": 0.5333333333333333,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -45,7 +45,7 @@
 					{
 						"width": 16,
 						"height": 20,
-						"originX": 8,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -77,7 +77,7 @@
 					{
 						"width": 20,
 						"height": 20,
-						"originX": 32,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -113,7 +113,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

@@ -1,0 +1,44 @@
+{
+	"name": "Game Over Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 177270046569956
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Button CSS",
+					"sid": 435415400439844
+				}
+			],
+			"sid": 629776128257850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "playagain",
+					"sid": 756001915965152
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 167091237361585,
+					"parameters": {
+						"layout": "Level Select"
+					}
+				}
+			],
+			"sid": 931745853552214
+		}
+	],
+	"sid": 424023407393917
+}

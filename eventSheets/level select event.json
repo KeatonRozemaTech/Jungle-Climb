@@ -2,6 +2,16 @@
 	"name": "Level Select Event",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Level",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 347835429606297
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -33,6 +43,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 536743887577166,
+					"parameters": {
+						"variable": "Level",
+						"value": "1"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 506203185409571,
@@ -47,9 +66,39 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
+					"id": "on-clicked",
+					"objectClass": "Level2",
+					"sid": 611595164608955
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 201746012811047
+					"sid": 317054435260042,
+					"parameters": {
+						"variable": "Level",
+						"value": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 215741261012779,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 308935826601196
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 833723530948133
 				}
 			],
 			"actions": [

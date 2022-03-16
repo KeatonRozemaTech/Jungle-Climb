@@ -1,5 +1,5 @@
 {
-	"name": "Help Screen",
+	"name": "Game Over",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,24 +7,28 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "StartBackground",
+					"type": "Lava",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 0.5,
+						"image-scale-y": 0.5,
+						"image-angle": 0
 					},
-					"uid": 17,
+					"uid": 28,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 500,
-						"y": 370,
-						"width": 1024,
-						"height": 768,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": -10,
+						"y": -10,
+						"width": 1032,
+						"height": 789,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -36,35 +40,65 @@
 					}
 				},
 				{
-					"type": "HelpText",
+					"type": "playagain",
 					"properties": {
-						"text": "Use W to jump, double click to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
-						"enable-bbcode": true,
-						"font": "Comic Sans MS",
-						"size": 50,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
+						"type": "button",
+						"text": "Play Again?",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 387.5,
+						"y": 313,
+						"width": 225,
+						"height": 125,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
 							1
+						]
+					}
+				},
+				{
+					"type": "GameOver",
+					"properties": {
+						"text": "Game Over",
+						"enable-bbcode": true,
+						"font": "Broadway",
+						"size": 55,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							0.6588235294117647,
+							0.6588235294117647,
+							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 21,
+					"uid": 33,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 44,
-						"y": 131,
-						"width": 942,
-						"height": 540,
+						"x": 242,
+						"y": 177,
+						"width": 531,
+						"height": 89,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -76,39 +110,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Exitback",
-					"properties": {
-						"type": "button",
-						"text": "X",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 55,
-						"y": 55,
-						"width": 60,
-						"height": 60,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
 				}
 			],
-			"sid": 940724223789140,
+			"sid": 185084238783413,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -137,7 +141,7 @@
 			"global": false
 		}
 	],
-	"sid": 108624972679100,
+	"sid": 666353435040351,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2000,
@@ -146,5 +150,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Help Event"
+	"eventSheet": "Game Over Event"
 }

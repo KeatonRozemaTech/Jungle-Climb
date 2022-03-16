@@ -10,25 +10,21 @@
 					"type": "StartBackground",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 15,
-						"image-scale-y": 15,
-						"image-angle": 0
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 17,
+					"uid": 35,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -10,
-						"y": -10,
-						"width": 1020,
-						"height": 770,
-						"originX": 0,
-						"originY": 0,
+						"x": 500,
+						"y": 370,
+						"width": 1024,
+						"height": 768,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -55,10 +51,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 311.5,
+						"x": 375,
+						"y": 250,
 						"width": 250,
-						"height": 150,
+						"height": 100,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -85,10 +81,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 474,
-						"width": 250,
-						"height": 150,
+						"x": 375,
+						"y": 375,
+						"width": 120,
+						"height": 100,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -97,6 +93,138 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Website",
+					"properties": {
+						"type": "button",
+						"text": "Website",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 36,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 377,
+						"y": 488,
+						"width": 120,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Feedback",
+					"properties": {
+						"type": "button",
+						"text": "Feedback",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 37,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 506,
+						"y": 490,
+						"width": 120,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Settingsbutton",
+					"properties": {
+						"type": "button",
+						"text": "SETTINGS",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 38,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 503,
+						"y": 379,
+						"width": 120,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Title",
+					"properties": {
+						"text": "Jungle Climb",
+						"enable-bbcode": true,
+						"font": "Cambria",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.7294117647058823,
+							0.7294117647058823,
+							0.7294117647058823,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 43,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 275,
+						"y": 50,
+						"width": 450,
+						"height": 134,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

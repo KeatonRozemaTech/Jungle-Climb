@@ -26,9 +26,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
+					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 814856850672117
+					"sid": 626232300053055
 				}
 			],
 			"actions": [
@@ -38,6 +38,73 @@
 				}
 			],
 			"sid": 939580931771830
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 594254045577482
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 422962639606192,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"2px solid #1f1f1f\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 477109831221024,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"lightgrey\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 749491955814104,
+					"parameters": {
+						"property-name": "\"border-radius\"",
+						"value": "\"5px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 328445673980885,
+					"parameters": {
+						"property-name": "\"color\"",
+						"value": "\"black\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 502785000587249,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"1.35em\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "TextInput",
+					"sid": 858638258879599,
+					"parameters": {
+						"property-name": "\"text-align\"",
+						"value": "\"center\""
+					}
+				}
+			],
+			"sid": 611533118678015
 		}
 	],
 	"sid": 633727005369076

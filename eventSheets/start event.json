@@ -47,9 +47,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
+					"id": "on-clicked",
+					"objectClass": "Settingsbutton",
+					"sid": 488896789772894
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 358810675523207
+					"sid": 610751288429014,
+					"parameters": {
+						"layout": "Settings Screen"
+					}
+				}
+			],
+			"sid": 211501077384777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 882700779830279
 				}
 			],
 			"actions": [
@@ -73,28 +94,28 @@
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 158536392852744,
+					"sid": 108151328326177,
 					"parameters": {
 						"property-name": "\"border\"",
-						"value": "\"7px solid black\""
+						"value": "\"7px solid #1f1f1f\""
 					}
 				},
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 793349699408814,
+					"sid": 232103509802595,
 					"parameters": {
 						"property-name": "\"background-color\"",
-						"value": "\"darkgreen\""
+						"value": "\"#0c8717\""
 					}
 				},
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 319439005053767,
+					"sid": 531447392524149,
 					"parameters": {
 						"property-name": "\"border-radius\"",
-						"value": "\"10px\""
+						"value": "\"5px\""
 					}
 				},
 				{
@@ -109,10 +130,10 @@
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 274758414271852,
+					"sid": 188168848235223,
 					"parameters": {
 						"property-name": "\"font-size\"",
-						"value": "\"1.5em\""
+						"value": "\"1.35em\""
 					}
 				},
 				{
@@ -125,7 +146,43 @@
 					}
 				}
 			],
-			"sid": 810913780172707
+			"sid": 810913780172707,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 142291845396783,
+							"parameters": {
+								"object": "Buttons"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "Buttons",
+							"sid": 348736209949690,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#07590e\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Buttons",
+							"sid": 566218793946288,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"9px solid black\""
+							}
+						}
+					],
+					"sid": 155041398845432
+				}
+			]
 		}
 	],
 	"sid": 293294515745621

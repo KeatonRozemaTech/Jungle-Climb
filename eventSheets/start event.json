@@ -68,6 +68,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-clicked",
+					"objectClass": "Website",
+					"sid": 825684683232377
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 736916942012119,
+					"parameters": {
+						"url": "\"https://team-1-am-2122cintronk.2122cintronk.repl.co/\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 878444331233701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 882700779830279
@@ -130,10 +152,10 @@
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 188168848235223,
+					"sid": 311176808322857,
 					"parameters": {
 						"property-name": "\"font-size\"",
-						"value": "\"1.35em\""
+						"value": "\".955em\""
 					}
 				},
 				{

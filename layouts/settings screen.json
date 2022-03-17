@@ -125,7 +125,7 @@
 					"world": {
 						"x": 145,
 						"y": 205,
-						"width": 216,
+						"width": 175,
 						"height": 41,
 						"originX": 0,
 						"originY": 0,
@@ -137,6 +137,66 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "SaveGame",
+					"properties": {
+						"type": "button",
+						"text": "Save",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 44,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 167,
+						"y": 292,
+						"width": 166,
+						"height": 72,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "LoadGame",
+					"properties": {
+						"type": "button",
+						"text": "Load",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 45,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 351,
+						"y": 290,
+						"width": 155,
+						"height": 79,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],

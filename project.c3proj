@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Physics",
 			"name": "Physics",
@@ -128,7 +136,11 @@
 			"Mouse",
 			"TextInput",
 			"UserName",
-			"Title"
+			"Title",
+			"SaveGame",
+			"LoadGame",
+			"Browser",
+			"Victory"
 		],
 		"subfolders": [
 			{
@@ -202,7 +214,8 @@
 			"Help Screen",
 			"Level Select",
 			"Game Over",
-			"Settings Screen"
+			"Settings Screen",
+			"Victory Page"
 		],
 		"subfolders": []
 	},
@@ -212,7 +225,8 @@
 			"Start Event",
 			"Help Event",
 			"Level Select Event",
-			"Game Over Event"
+			"Game Over Event",
+			"Victory Condition"
 		],
 		"subfolders": []
 	},

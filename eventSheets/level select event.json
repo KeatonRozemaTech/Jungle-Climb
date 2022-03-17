@@ -96,6 +96,36 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-clicked",
+					"objectClass": "Level3",
+					"sid": 839717317434587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 734595403160786,
+					"parameters": {
+						"variable": "Level",
+						"value": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 884270128093970,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 842342518335591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 833723530948133

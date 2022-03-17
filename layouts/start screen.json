@@ -82,7 +82,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 375,
-						"y": 375,
+						"y": 360,
 						"width": 120,
 						"height": 100,
 						"originX": 0,
@@ -111,8 +111,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 377,
-						"y": 488,
+						"x": 375,
+						"y": 470,
 						"width": 120,
 						"height": 100,
 						"originX": 0,
@@ -141,8 +141,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 506,
-						"y": 490,
+						"x": 505,
+						"y": 470,
 						"width": 120,
 						"height": 100,
 						"originX": 0,
@@ -171,8 +171,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 503,
-						"y": 379,
+						"x": 505,
+						"y": 360,
 						"width": 120,
 						"height": 100,
 						"originX": 0,

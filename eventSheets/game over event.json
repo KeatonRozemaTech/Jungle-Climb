@@ -38,6 +38,98 @@
 				}
 			],
 			"sid": 931745853552214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 820973476939936
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "playagain",
+					"sid": 821917662365340,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"#ed3300\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "playagain",
+					"sid": 304920789151682,
+					"parameters": {
+						"property-name": "\"border-radius\"",
+						"value": "\"5px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "playagain",
+					"sid": 712647458689623,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"30px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "playagain",
+					"sid": 781789356162958,
+					"parameters": {
+						"property-name": "\"text-align\"",
+						"value": "\"center\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "playagain",
+					"sid": 199241337458626,
+					"parameters": {
+						"property-name": "\"font-weight\"",
+						"value": "\"bolder\""
+					}
+				}
+			],
+			"sid": 919056458877623
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 129204821555282,
+					"parameters": {
+						"object": "Buttons"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 594319965640924,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"#c43008\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 648601951254319,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"9px solid black\""
+					}
+				}
+			],
+			"sid": 310709075069570
 		}
 	],
 	"sid": 424023407393917

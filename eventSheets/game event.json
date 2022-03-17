@@ -32,327 +32,565 @@
 			"sid": 839592110384597
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 656039568015903,
-					"parameters": {
-						"key": 65
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 857692021736998,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Clife",
-					"sid": 375951372926864,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "left"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Clife",
-					"sid": 513390101836646,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 358154767537457,
-			"isOrBlock": true
+			"eventType": "variable",
+			"name": "LevelTimeStart",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 451158286474831
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 754077588313737,
-					"parameters": {
-						"key": 68
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 653678649454561,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Clife",
-					"sid": 688029703129210,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "right"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Clife",
-					"sid": 407558311292950,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 309136570177671,
-			"isOrBlock": true
+			"eventType": "variable",
+			"name": "BatDirection",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 932946787687145
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 704189525662459,
-					"parameters": {
-						"key": 32
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 375541300940690,
-					"parameters": {
-						"key": 87
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 548553966817411,
-					"parameters": {
-						"key": 38
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Clife",
-					"sid": 276946810413214,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "jump"
-					}
-				}
-			],
-			"sid": 704412326968219,
-			"isOrBlock": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 689001314891677
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 935954178541995,
-					"parameters": {
-						"variable": "Pause"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-max-speed",
-					"objectClass": "Clife",
-					"sid": 714449084022760,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "speed"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "Timer",
-					"sid": 402323056154283,
-					"parameters": {
-						"text": "\"Time: \"&round(time)"
-					}
-				},
-				{
-					"id": "set-y",
-					"objectClass": "Lava",
-					"sid": 480437940884663,
-					"parameters": {
-						"y": "Lava.Y - .75"
-					}
-				}
-			],
-			"sid": 569521186265367
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 655336521599603,
-					"parameters": {
-						"key": 16
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 399362798046141,
-					"parameters": {
-						"variable": "speed",
-						"value": "450"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Clife",
-					"sid": 757549477138593,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "500"
-					}
-				}
-			],
-			"sid": 971285524280680
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 299860791190361,
-					"parameters": {
-						"key": 16
-					},
-					"isInverted": true
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 965260576008359,
-					"parameters": {
-						"key": 83
-					},
-					"isInverted": true
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 845484560257526,
-					"parameters": {
-						"key": 40
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 581984315645480,
-					"parameters": {
-						"variable": "speed",
-						"value": "250"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Clife",
-					"sid": 862200161481770,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "1000"
-					}
-				},
-				{
-					"id": "set-gravity",
-					"objectClass": "Clife",
-					"sid": 767151248832379,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "1500"
-					}
-				}
-			],
-			"sid": 173839538623892
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 416535628393080,
-					"parameters": {
-						"key": 40
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 975123477289052,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 163552900718382,
-					"parameters": {
-						"variable": "speed",
-						"value": "100"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Clife",
-					"sid": 867516054435383,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "500"
-					}
-				}
-			],
-			"sid": 663049641949013,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Controls",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 126266149215282,
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 293930902712247,
 							"parameters": {
-								"first-value": "walkDirection",
-								"comparison": 0,
-								"second-value": "0"
+								"key": 16
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 262269950019913,
+							"parameters": {
+								"key": 83
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 213126113270154,
+							"parameters": {
+								"key": 40
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 258021725140936,
+							"parameters": {
+								"variable": "speed",
+								"value": "250"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Clife",
+							"sid": 783566059030313,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "1000"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Clife",
+							"sid": 310646813512107,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "1500"
+							}
+						}
+					],
+					"sid": 231064313809400
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 871099743727814,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 515933440680083,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 173716386253173,
+							"parameters": {
+								"variable": "speed",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Clife",
+							"sid": 473866005537750,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "500"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Clife",
+							"sid": 940452227001845,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "3500"
+							}
+						}
+					],
+					"sid": 777041975572788,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 516293469215674,
+									"parameters": {
+										"first-value": "walkDirection",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 337042569196417,
+									"parameters": {
+										"frame-number": "10"
+									}
+								}
+							],
+							"sid": 458969508512005
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 895734353474554,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 149723380599907,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 304205330245272,
+							"parameters": {
+								"variable": "speed",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Clife",
+							"sid": 672840459598205,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "500"
+							}
+						}
+					],
+					"sid": 281328991943564,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 583878250066547,
+									"parameters": {
+										"first-value": "walkDirection",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 883588871309338,
+									"parameters": {
+										"frame-number": "11"
+									}
+								}
+							],
+							"sid": 717316910988650
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 893971336332873,
+							"parameters": {
+								"key": 16
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 913081180810538,
+							"parameters": {
+								"variable": "speed",
+								"value": "450"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Clife",
+							"sid": 254170899772005,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "500"
+							}
+						}
+					],
+					"sid": 667421880954384
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 488368822447212,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 247872890837312,
+							"parameters": {
+								"key": 87
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 492692008667009,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Clife",
+							"sid": 489932732223588,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 428850864667440,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 324656543199303,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 359870158334164,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Clife",
+							"sid": 569173581563424,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Clife",
+							"sid": 681963355803628,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 530921581725714,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 634623233244551,
+							"parameters": {
+								"key": 65
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 549117217697124,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Clife",
+							"sid": 309564980315935,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Clife",
+							"sid": 387457888673911,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 886303332800839,
+					"isOrBlock": true
+				}
+			],
+			"sid": 425757350907571
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Direction",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "Clife",
+							"sid": 729700516676196,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [],
+					"sid": 630055534264232,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 461647033677624,
+									"parameters": {
+										"first-value": "walkDirection",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 181922396016317,
+									"parameters": {
+										"frame-number": "6"
+									}
+								}
+							],
+							"sid": 415239740100701
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 425812934484934,
+									"parameters": {
+										"first-value": "walkDirection",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 139307673827450,
+									"parameters": {
+										"frame-number": "8"
+									}
+								}
+							],
+							"sid": 686116461983304
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 725547970315452,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 517423967100168,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 247626567837625,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 777540102594232,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 983352315998157,
+							"parameters": {
+								"variable": "walkDirection",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 570627615576193,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 718736721618788,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 690702514913265,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 973542238633955,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 974618930974513,
+							"parameters": {
+								"key": 65
 							}
 						}
 					],
@@ -360,79 +598,76 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Clife",
-							"sid": 739523007083115,
+							"sid": 170879200822644,
 							"parameters": {
-								"frame-number": "11"
+								"frame-number": "6"
 							}
 						}
 					],
-					"sid": 402206940365593
-				}
-			],
-			"isOrBlock": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 326889217323364,
-					"parameters": {
-						"key": 40
-					}
+					"sid": 973085493228619,
+					"isOrBlock": true
 				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 396949114695920,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 651021356610000,
-					"parameters": {
-						"variable": "speed",
-						"value": "100"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Clife",
-					"sid": 377305149032156,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "500"
-					}
-				},
-				{
-					"id": "set-gravity",
-					"objectClass": "Clife",
-					"sid": 376431679543453,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "3500"
-					}
-				}
-			],
-			"sid": 721180983618347,
-			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 574233975381474,
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 736928043729351,
 							"parameters": {
-								"first-value": "walkDirection",
+								"key": 68
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 895954144582674,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 971576492304945,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 179501598012344,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 942145952977099,
+							"parameters": {
+								"variable": "walkDirection",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 902383566842820,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 741939482022921,
+							"parameters": {
+								"variable": "walkDirection",
 								"comparison": 0,
-								"second-value": "1"
+								"value": "0"
 							}
 						}
 					],
@@ -440,16 +675,563 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Clife",
-							"sid": 808722677194406,
+							"sid": 701146288401172,
 							"parameters": {
-								"frame-number": "10"
+								"frame-number": "1"
 							}
 						}
 					],
-					"sid": 467743414283442
+					"sid": 264945356555751
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 685631249160499,
+							"parameters": {
+								"variable": "walkDirection",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 586560676764006,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Clife",
+							"sid": 186396792969753,
+							"parameters": {
+								"frame-number": "Clife.AnimationFrame+1"
+							}
+						}
+					],
+					"sid": 965539960333541,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Clife",
+									"sid": 320499110046906,
+									"parameters": {
+										"comparison": 2,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 165340254079522,
+									"parameters": {
+										"frame-number": "6"
+									}
+								}
+							],
+							"sid": 594793811885550
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Clife",
+									"sid": 617238036545601,
+									"parameters": {
+										"comparison": 4,
+										"number": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Clife",
+									"sid": 853691500791421,
+									"parameters": {
+										"frame-number": "6"
+									}
+								}
+							],
+							"sid": 181559194697236
+						}
+					]
 				}
 			],
-			"isOrBlock": true
+			"sid": 632676439504581
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 180769099720343
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 376658469153405,
+							"parameters": {
+								"property-name": "\"border-radius\"",
+								"value": "\"5px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 600399701501960,
+							"parameters": {
+								"property-name": "\"border-width\"",
+								"value": "\"5px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 275227196163997,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"30px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 640027799287482,
+							"parameters": {
+								"property-name": "\"text-align\"",
+								"value": "\"center\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 536571332721619,
+							"parameters": {
+								"property-name": "\"font-weight\"",
+								"value": "\"bolder\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Play",
+							"sid": 689500645323119,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"grey\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Pause",
+							"sid": 401096102580722,
+							"parameters": {
+								"property-name": "\"border-radius\"",
+								"value": "\"5px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Pause",
+							"sid": 144154681310269,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"30px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Pause",
+							"sid": 612672971564816,
+							"parameters": {
+								"property-name": "\"text-align\"",
+								"value": "\"center\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Pause",
+							"sid": 970191257667335,
+							"parameters": {
+								"property-name": "\"font-weight\"",
+								"value": "\"bolder\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Pause",
+							"sid": 860029507987419,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"grey\""
+							}
+						}
+					],
+					"sid": 789489605503514
+				}
+			],
+			"sid": 670130662494176
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "End Condition",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 177511664071935,
+							"parameters": {
+								"object": "Lava"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 526514135986659,
+							"parameters": {
+								"layout": "Game Over"
+							}
+						}
+					],
+					"sid": 471800989205281
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Jewels",
+							"sid": 229891938722645,
+							"parameters": {
+								"object": "Clife"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 212690831899224,
+							"parameters": {
+								"layout": "Victory Page"
+							}
+						}
+					],
+					"sid": 401705725346802
+				}
+			],
+			"sid": 608574359728540
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pause",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 569366603883009,
+							"parameters": {
+								"interval-seconds": ".015"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 298578455489098,
+							"parameters": {
+								"variable": "Pause"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Clife",
+							"sid": 632259973091336,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "speed"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 461468050046796,
+							"parameters": {
+								"text": "\"Time: \"&(round(time)-round(LevelTimeStart))"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Lava",
+							"sid": 725079800391937,
+							"parameters": {
+								"y": "Lava.Y - .75"
+							}
+						}
+					],
+					"sid": 303904624339375
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Play",
+							"sid": 112690129084994
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 953866653645999,
+							"parameters": {
+								"variable": "Pause"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 473395798765146,
+							"parameters": {
+								"time-scale": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 240704680600373,
+							"parameters": {
+								"variable": "Pause",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Pause",
+							"sid": 889588288249977,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Play",
+							"sid": 438561240136086,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 610966460990629
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Pause",
+							"sid": 265143463700777
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 610832838147233,
+							"parameters": {
+								"variable": "Pause"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 431574562812837,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Pause",
+							"sid": 658749688885150,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Play",
+							"sid": 480538457272277,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 932163126928881,
+							"parameters": {
+								"variable": "Pause",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 664805890022682
+				}
+			],
+			"sid": 449485359273365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 931743539098137
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 212039757641853,
+					"parameters": {
+						"variable": "LevelTimeStart",
+						"value": "time"
+					}
+				}
+			],
+			"sid": 213460465106336,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 820570155441833,
+							"parameters": {
+								"variable": "Level",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid",
+							"sid": 347499682497634
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Background",
+							"sid": 185902261280648,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 253528376091249
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856600489247411,
+							"parameters": {
+								"variable": "Level",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid",
+							"sid": 499999387802330
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Background",
+							"sid": 724863318838607,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 316414035859521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 657851869721140,
+							"parameters": {
+								"variable": "Level",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Background",
+							"sid": 172148667662455,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 805304927809785
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -474,185 +1256,9 @@
 			"sid": 104780362687996
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-jumping",
-					"objectClass": "Clife",
-					"sid": 227841226028165,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [],
-			"sid": 421493907584951,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 288275066982330,
-							"parameters": {
-								"first-value": "walkDirection",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 865828596978020,
-							"parameters": {
-								"frame-number": "6"
-							}
-						}
-					],
-					"sid": 591676688368247
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 463074184183784,
-							"parameters": {
-								"first-value": "walkDirection",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 322825880492238,
-							"parameters": {
-								"frame-number": "8"
-							}
-						}
-					],
-					"sid": 118341620615522
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Play",
-					"sid": 484512350885342
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 586176036143865,
-					"parameters": {
-						"variable": "Pause"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 937105189847833,
-					"parameters": {
-						"time-scale": "1"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 315407390875221,
-					"parameters": {
-						"variable": "Pause",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Pause",
-					"sid": 631108984973390,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Play",
-					"sid": 265338002614244,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 635453651174688
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Pause",
-					"sid": 746041644043683
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 768520323559310,
-					"parameters": {
-						"variable": "Pause"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 296611605217101,
-					"parameters": {
-						"time-scale": "0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Pause",
-					"sid": 542361059946486,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Play",
-					"sid": 714602152982962,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 898481852678370,
-					"parameters": {
-						"variable": "Pause",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 864526586801449
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Direction",
+			"title": "Enemys",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -660,440 +1266,105 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 113195164166037,
-							"parameters": {
-								"key": 68
-							}
-						},
-						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 656236045056357,
-							"parameters": {
-								"key": 39
-							}
-						},
-						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 708101745946029,
-							"parameters": {
-								"key": 37
-							}
-						},
-						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 250015854728289,
-							"parameters": {
-								"key": 65
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
+							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 102076392341689,
-							"parameters": {
-								"variable": "walkDirection",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 142583317258123,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 471807663201349,
-							"parameters": {
-								"key": 68
-							}
+							"sid": 672863815483397
 						},
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 350276735203765,
-							"parameters": {
-								"key": 39
-							}
-						},
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 545294319915778,
-							"parameters": {
-								"key": 37
-							}
-						},
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 743316281828830,
-							"parameters": {
-								"key": 65
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 834586573801895,
-							"parameters": {
-								"frame-number": "6"
-							}
-						}
-					],
-					"sid": 439443688645856,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 550010863109331,
-							"parameters": {
-								"key": 68
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 990738747246844,
-							"parameters": {
-								"key": 39
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 793361895392427,
-							"parameters": {
-								"key": 37
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 617731649324792,
-							"parameters": {
-								"key": 65
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 174055947890777,
-							"parameters": {
-								"variable": "walkDirection",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 790090903806388,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 925981688675068,
+							"sid": 698789973250983,
 							"parameters": {
-								"variable": "walkDirection",
+								"variable": "BatDirection",
 								"comparison": 0,
-								"value": "0"
+								"value": "1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 328218450220414,
+							"id": "set-x",
+							"objectClass": "Bat",
+							"sid": 316677912584436,
 							"parameters": {
-								"frame-number": "1"
+								"x": "Bat.X+1"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Bat",
+							"sid": 945620820707967,
+							"parameters": {
+								"state": "not-mirrored"
 							}
 						}
 					],
-					"sid": 364870486637768
+					"sid": 746625421868006
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
+							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 366824946562460,
-							"parameters": {
-								"variable": "walkDirection",
-								"comparison": 0,
-								"value": "1"
-							}
+							"sid": 574642161684133
 						},
 						{
-							"id": "every-x-seconds",
+							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 567020593806449,
+							"sid": 894131234299823,
 							"parameters": {
-								"interval-seconds": "0.5"
+								"variable": "BatDirection",
+								"comparison": 0,
+								"value": "-1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 679356996735668,
+							"id": "set-x",
+							"objectClass": "Bat",
+							"sid": 122556535898015,
 							"parameters": {
-								"frame-number": "Clife.AnimationFrame+1"
+								"x": "Bat.X-1"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Bat",
+							"sid": 742009323078115,
+							"parameters": {
+								"state": "mirrored"
 							}
 						}
 					],
-					"sid": 747404024610381,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "Clife",
-									"sid": 615239467545677,
-									"parameters": {
-										"comparison": 2,
-										"number": "6"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Clife",
-									"sid": 375537138260818,
-									"parameters": {
-										"frame-number": "6"
-									}
-								}
-							],
-							"sid": 257678337475584
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "Clife",
-									"sid": 820378228763814,
-									"parameters": {
-										"comparison": 4,
-										"number": "8"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Clife",
-									"sid": 253920757578480,
-									"parameters": {
-										"frame-number": "6"
-									}
-								}
-							],
-							"sid": 360133354701554
-						}
-					]
-				}
-			],
-			"sid": 931978659495962
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Button",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+					"sid": 469096415987839
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 508940435568524
+							"sid": 818379093675993
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 214785383202724
 						}
 					],
 					"actions": [
 						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 516538325830313,
+							"id": "start-animation",
+							"objectClass": "Bat",
+							"sid": 846606089318031,
 							"parameters": {
-								"property-name": "\"border-radius\"",
-								"value": "\"5px\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 553403457080869,
-							"parameters": {
-								"property-name": "\"border-width\"",
-								"value": "\"5px\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 941937846689464,
-							"parameters": {
-								"property-name": "\"font-size\"",
-								"value": "\"30px\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 294298454629723,
-							"parameters": {
-								"property-name": "\"text-align\"",
-								"value": "\"center\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 553932609416609,
-							"parameters": {
-								"property-name": "\"font-weight\"",
-								"value": "\"bolder\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Play",
-							"sid": 250055644111229,
-							"parameters": {
-								"property-name": "\"background-color\"",
-								"value": "\"green\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Pause",
-							"sid": 784795610202443,
-							"parameters": {
-								"property-name": "\"border-radius\"",
-								"value": "\"5px\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Pause",
-							"sid": 484859250865384,
-							"parameters": {
-								"property-name": "\"font-size\"",
-								"value": "\"30px\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Pause",
-							"sid": 860042713699390,
-							"parameters": {
-								"property-name": "\"text-align\"",
-								"value": "\"center\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Pause",
-							"sid": 842618390059759,
-							"parameters": {
-								"property-name": "\"font-weight\"",
-								"value": "\"bolder\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Pause",
-							"sid": 808752970743798,
-							"parameters": {
-								"property-name": "\"background-color\"",
-								"value": "\"green\""
+								"from": "current-frame"
 							}
 						}
 					],
-					"sid": 743603923498424
-				}
-			],
-			"sid": 464955812663133
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Clife",
-					"sid": 626903848832210,
-					"parameters": {
-						"object": "Lava"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 202389478320380,
-					"parameters": {
-						"layout": "Game Over"
-					}
-				}
-			],
-			"sid": 106904860079637
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 741585840666484
-				}
-			],
-			"actions": [],
-			"sid": 252709012595948,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 740465358275413,
-							"parameters": {
-								"variable": "Level",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 635361932833244
+					"sid": 933507500581520
 				},
 				{
 					"eventType": "block",
@@ -1101,24 +1372,74 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 664056545306237,
+							"sid": 761594711110907,
 							"parameters": {
-								"variable": "Level",
+								"variable": "BatDirection",
 								"comparison": 0,
-								"value": "2"
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Bat",
+							"sid": 582056652274615,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "968"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "PlatformsSolid",
-							"sid": 963110588712891
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 408181176289236,
+							"parameters": {
+								"variable": "BatDirection",
+								"value": "-1"
+							}
 						}
 					],
-					"sid": 555336078533971
+					"sid": 762600404829653
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 259687170984940,
+							"parameters": {
+								"variable": "BatDirection",
+								"comparison": 0,
+								"value": "-1"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Bat",
+							"sid": 724274671279396,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "50"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 518794300703336,
+							"parameters": {
+								"variable": "BatDirection",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 562422399419045
 				}
-			]
+			],
+			"sid": 208071462113772
 		}
 	],
 	"sid": 582206567344910

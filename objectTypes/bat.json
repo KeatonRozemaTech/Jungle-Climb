@@ -237,7 +237,7 @@
 				],
 				"sid": 147002016134777,
 				"name": "Main",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

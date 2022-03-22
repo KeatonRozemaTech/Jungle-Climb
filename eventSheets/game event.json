@@ -1242,6 +1242,55 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 759758504928039,
+							"parameters": {
+								"object": "Dragon"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 606666621804252,
+							"parameters": {
+								"variable": "EnemyHit",
+								"comparison": 4,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 700119494572483,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "3"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 727613308972089,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "PlayerHit",
+							"sid": 159189224798903
+						}
+					],
+					"sid": 428934853224592
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 560987777588111
@@ -1317,6 +1366,69 @@
 						}
 					],
 					"sid": 981134709937947
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Dragon",
+							"sid": 942056491641647,
+							"parameters": {
+								"animation": "\"fly\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 889468901624040,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "Dragon",
+							"sid": 145224402048411,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "Dragon",
+							"sid": 591247543421994,
+							"parameters": {
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 124495154983944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 602250609752355
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Snake",
+							"sid": 187050734161757,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 681803050524371
 				}
 			],
 			"sid": 379815409777551

@@ -73,8 +73,8 @@
 					"type": "PlatformsSolid",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 48,
+						"tile-height": 48,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
@@ -109,14 +109,14 @@
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 42,
-							"height": 182,
-							"max-width": 290,
-							"max-height": 421,
-							"data": "6x0,219,31x0,242hv,33x0,242hv,38x0,242hv,24x0,242hv,7x0,268,268v,27x0,268,3x327,5x325,245x0,219,31x0,242hv,33x0,242hv,23x0,242hv,14x0,242hv,24x0,242hv,7x0,268,268v,27x0,268,3x327,5x325,245x0,219,31x0,242hv,32x0,2x242hv,23x0,242hv,14x0,242hv,24x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,245x0,219,31x0,242hv,31x0,3x242hv,23x0,242hv,39x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,245x0,219,31x0,242hv,30x0,2x242hv,2x241hv,22x0,2x242hv,14x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,61x0,2x242hv,3x241hv,21x0,3x242hv,14x0,242hv,32x0,267h,267hv,27x0,268,3x327,5x325,245x0,219,60x0,2x242hv,4x241hv,20x0,4x242hv,55x0,242hv,20x0,268,3x327,5x325,245x0,219,59x0,2x242hv,5x241hv,19x0,5x242hv,14x0,242hv,36x0,242hv,3x0,242hv,20x0,268,3x327,5x325,245x0,219,58x0,2x242hv,5x241hv,9x0,242hv,10x0,3x242hv,2x242,9x0,242hv,4x0,242hv,32x0,267,267v,2x0,242hv,24x0,268,3x327,5x325,245x0,219,57x0,2x242hv,5x241hv,10x0,242hv,10x0,2x242hv,3x242,47x0,268,268v,27x0,268,3x327,5x325,245x0,219,56x0,2x242hv,5x241hv,22x0,2x242hv,3x242,14x0,242hv,32x0,268,268v,27x0,268,2x327,6x325,245x0,219,55x0,2x242hv,5x241hv,23x0,2x242hv,3x242,14x0,242hv,7x0,242hv,5x0,242hv,18x0,268,268v,27x0,268,2x327,6x325,245x0,219,55x0,242hv,5x241hv,24x0,2x242hv,3x242,39x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,245x0,219,42x0,242hv,12x0,2x242hv,4x241hv,23x0,3x242hv,3x242,14x0,242hv,24x0,242hv,7x0,268,268v,18x0,242hv,8x0,268,2x327,6x325,245x0,219,42x0,242hv,12x0,2x242hv,4x241hv,8x0,242hv,6x0,242hv,7x0,3x242hv,3x242,14x0,242hv,17x0,242hv,14x0,268,268v,18x0,242hv,8x0,268,2x327,6x325,301x0,2x242hv,4x241hv,8x0,242hv,6x0,242hv,7x0,3x242hv,3x242,47x0,268,268v,27x0,268,2x327,6x325,250x0,242hv,50x0,2x242hv,4x241hv,23x0,2x242hv,4x242,18x0,242hv,6x0,242hv,21x0,268,268v,27x0,268,2x327,6x325,301x0,2x242hv,4x241hv,22x0,2x242hv,4x242,48x0,268,268v,27x0,268,2x327,6x325,301x0,2x242hv,4x241hv,22x0,2x242hv,4x242,15x0,242hv,32x0,268,268v,27x0,268,2x327,6x325,245x0,219,55x0,2x242hv,4x241hv,22x0,2x242hv,4x242,8x0,242hv,6x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,8x0,242hv,8x0,242hv,20x0,242hv,11x0,242hv,4x0,2x242hv,4x241hv,22x0,2x242hv,3x242,38x0,242hv,10x0,268,268v,12x0,242hv,14x0,268,3x327,5x325,245x0,219,38x0,242hv,11x0,242hv,4x0,242hv,5x241hv,22x0,2x242hv,3x242,16x0,242hv,32x0,268,268v,12x0,242hv,14x0,268,3x327,5x325,245x0,219,4x0,242hv,8x0,242hv,6x0,242hv,34x0,242hv,5x241hv,15x0,242hv,6x0,2x242hv,3x242,16x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,55x0,242hv,5x241hv,15x0,242hv,6x0,2x242hv,2x242,50x0,268,268v,27x0,268,3x327,5x325,245x0,219,45x0,242hv,9x0,242hv,5x241hv,5x0,242hv,9x0,242hv,6x0,2x242hv,2x242,17x0,242hv,32x0,268,268v,20x0,267,2x268vd,267vd,3x0,268,3x327,5x325,245x0,219,45x0,242hv,9x0,242hv,5x241hv,5x0,242hv,16x0,2x242hv,2x242,17x0,242hv,31x0,238h,268,268v,20x0,267hd,296hv,269hd,268hv,3x0,268,3x327,5x325,245x0,219,26x0,242hv,28x0,242hv,5x241hv,4x0,242hv,17x0,2x242hv,2x242,48x0,2x241h,268,268v,8x0,242hv,13x0,268h,268hv,3x0,268,3x327,5x325,245x0,219,26x0,242hv,8x0,242hv,19x0,242hv,5x241hv,4x0,242hv,17x0,2x242hv,242,18x0,242hv,28x0,155h,3x241h,268,268v,8x0,242hv,13x0,268h,268hv,3x0,268,3x327,5x325,245x0,219,26x0,242hv,8x0,242hv,19x0,242hv,5x241hv,4x0,242hv,17x0,2x242hv,242,9x0,242hv,8x0,242hv,30x0,2x241h,268,268v,22x0,268h,268hv,3x0,268,3x327,5x325,244x0,239,219,26x0,242hv,23x0,242hv,4x0,2x242hv,4x241hv,4x0,242hv,13x0,242hv,3x0,2x242hv,242,8x0,2x242hv,40x0,238,268,268v,22x0,267hd,267hv,3x0,268,3x327,5x325,244x0,242,219,26x0,242hv,23x0,242hv,4x0,2x242hv,4x241hv,4x0,242hv,13x0,242hv,3x0,2x242hv,242,7x0,3x242hv,8x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,244x0,239,219,55x0,2x242hv,4x241hv,4x0,242hv,13x0,242hv,3x0,2x242hv,242,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,55x0,2x242hv,4x241hv,4x0,242hv,17x0,2x242hv,242,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,55x0,2x242hv,4x241hv,4x0,242hv,17x0,2x242hv,242,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,245x0,219,55x0,2x242hv,4x241hv,4x0,242hv,38x0,242hv,61x0,268,3x327,5x325,301x0,2x242hv,4x241hv,4x0,242hv,420x0,242hv,420x0,242hv,420x0,242hv,420x0,242hv,420x0,242hv,420x0,242hv,104756x0"
+							"width": 28,
+							"height": 121,
+							"max-width": 304,
+							"max-height": 482,
+							"data": "6x0,145,31x0,1,33x0,1,23x0,1,14x0,1,4x0,1,19x0,242hv,7x0,268,268v,27x0,268,3x327,5x325,306x0,145,31x0,1,33x0,1,23x0,1,14x0,1,4x0,1,19x0,242hv,7x0,268,268v,27x0,268,3x327,5x325,306x0,145,31x0,1,32x0,1,21,23x0,1,14x0,1,4x0,1,19x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,306x0,145,31x0,1,31x0,1,2x21,23x0,1,19x0,1,19x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,306x0,145,31x0,1,30x0,1,3x21,22x0,1,21,14x0,1,4x0,1,27x0,268,268v,27x0,268,3x327,5x325,306x0,145,61x0,1,4x21,21x0,1,2x21,14x0,1,4x0,1,27x0,267h,267hv,27x0,268,3x327,5x325,306x0,145,60x0,1,5x21,20x0,1,3x21,19x0,1,35x0,242hv,20x0,268,3x327,5x325,306x0,145,59x0,1,6x21,19x0,1,4x21,14x0,1,4x0,1,31x0,242hv,3x0,242hv,20x0,268,3x327,5x325,306x0,145,58x0,1,6x21,9x0,1,10x0,1,4x21,9x0,1,4x0,1,4x0,1,27x0,267,267v,2x0,242hv,24x0,268,3x327,5x325,306x0,145,57x0,1,6x21,10x0,1,10x0,1,4x21,19x0,1,27x0,268,268v,27x0,268,3x327,5x325,306x0,145,56x0,1,6x21,22x0,1,4x21,14x0,1,4x0,1,27x0,268,268v,27x0,268,2x327,6x325,306x0,145,55x0,1,6x21,23x0,1,4x21,14x0,1,4x0,1,2x0,242hv,5x0,242hv,18x0,268,268v,27x0,268,2x327,6x325,306x0,145,55x0,1,5x21,24x0,1,4x21,19x0,1,19x0,242hv,7x0,268,268v,27x0,268,2x327,6x325,306x0,145,42x0,1,12x0,1,5x21,23x0,1,5x21,14x0,1,4x0,1,19x0,242hv,7x0,268,268v,18x0,242hv,8x0,268,2x327,6x325,306x0,145,42x0,1,12x0,1,5x21,8x0,1,6x0,1,7x0,1,5x21,14x0,1,4x0,1,12x0,242hv,14x0,268,268v,18x0,242hv,8x0,268,2x327,6x325,362x0,1,5x21,8x0,1,6x0,1,7x0,1,5x21,19x0,1,27x0,268,268v,27x0,268,2x327,6x325,311x0,1,50x0,1,5x21,23x0,1,5x21,18x0,242hv,1,5x0,242hv,21x0,268,268v,27x0,268,2x327,6x325,362x0,1,5x21,22x0,1,5x21,20x0,1,27x0,268,268v,27x0,268,2x327,6x325,362x0,1,5x21,22x0,1,5x21,15x0,1,4x0,1,27x0,268,268v,27x0,268,2x327,6x325,306x0,145,55x0,1,5x21,22x0,1,5x21,8x0,1,6x0,1,4x0,1,27x0,268,268v,27x0,268,3x327,5x325,306x0,145,8x0,1,8x0,1,20x0,1,11x0,1,4x0,1,5x21,22x0,1,4x21,21x0,1,16x0,242hv,10x0,268,268v,12x0,242hv,14x0,268,3x327,5x325,306x0,145,38x0,1,11x0,1,4x0,1,5x21,22x0,1,4x21,16x0,1,4x0,1,27x0,268,268v,12x0,242hv,14x0,268,3x327,5x325,306x0,145,4x0,1,8x0,1,6x0,1,34x0,1,5x21,15x0,1,6x0,1,4x21,16x0,1,4x0,1,27x0,268,268v,27x0,268,3x327,5x325,306x0,145,55x0,1,5x21,15x0,1,6x0,1,3x21,22x0,1,27x0,268,268v,27x0,268,3x327,5x325,306x0,145,45x0,1,9x0,1,5x21,5x0,1,9x0,1,6x0,1,3x21,17x0,1,4x0,1,27x0,268,268v,20x0,267,2x268vd,267vd,3x0,268,3x327,5x325,306x0,145,45x0,1,9x0,1,5x21,5x0,1,16x0,1,3x21,7x0,1,9x0,1,4x0,1,26x0,238h,268,268v,20x0,267hd,296hv,269hd,268hv,3x0,268,3x327,5x325,306x0,145,26x0,1,28x0,1,5x21,4x0,1,17x0,1,3x21,6x0,1,21,14x0,1,25x0,2x241h,268,268v,8x0,242hv,13x0,268h,268hv,3x0,268,3x327,5x325,306x0,145,26x0,1,8x0,1,19x0,1,5x21,4x0,1,17x0,1,2x21,18x0,1,4x0,1,23x0,155h,3x241h,268,268v,8x0,242hv,13x0,268h,268hv,3x0,268,3x327,5x325,306x0,145,26x0,1,8x0,1,19x0,242hv,5x21,4x0,242hv,17x0,3x21,9x0,242hv,8x0,242hv,30x0,2x241h,268,268v,22x0,268h,268hv,3x0,268,3x327,5x325,305x0,239,145,26x0,1,23x0,242hv,4x0,2x242hv,4x21,4x0,242hv,13x0,242hv,3x0,3x21,8x0,2x242hv,40x0,238,268,268v,22x0,267hd,267hv,3x0,268,3x327,5x325,305x0,242,145,26x0,1,23x0,242hv,4x0,2x242hv,4x21,4x0,242hv,13x0,242hv,3x0,3x21,7x0,3x242hv,8x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,305x0,239,145,55x0,2x242hv,4x21,4x0,242hv,13x0,242hv,3x0,3x21,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,306x0,145,55x0,2x242hv,4x21,4x0,242hv,17x0,3x21,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,306x0,145,55x0,2x242hv,4x21,4x0,242hv,17x0,3x21,18x0,242hv,32x0,268,268v,27x0,268,3x327,5x325,306x0,145,55x0,2x242hv,4x21,4x0,242hv,38x0,242hv,61x0,268,3x327,5x325,362x0,2x242hv,4x21,4x0,242hv,481x0,242hv,481x0,242hv,481x0,242hv,481x0,242hv,481x0,242hv,481x0,242hv,126693x0"
 						},
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 48,
+						"tile-height": 48,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
@@ -139,74 +139,6 @@
 					}
 				},
 				{
-					"type": "Clife",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Main",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1000,
-								"deceleration": 1000,
-								"jump-strength": 600,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": true,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"Wrap": {
-							"properties": {
-								"wrap-to": "layout"
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 1000,
-								"friction": 0,
-								"elasticity": 1,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 506,
-						"y": 5690,
-						"width": 45,
-						"height": 49.5,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Dragon",
 					"properties": {
 						"initially-visible": true,
@@ -221,8 +153,8 @@
 					"world": {
 						"x": -223,
 						"y": 4943,
-						"width": 96,
-						"height": 96,
+						"width": 138.6,
+						"height": 100.8,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -246,12 +178,18 @@
 					},
 					"uid": 4,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						}
+					},
 					"world": {
 						"x": 336,
 						"y": 5176,
-						"width": 48,
-						"height": 60,
+						"width": 64.10000000000001,
+						"height": 61.2,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -268,7 +206,7 @@
 					"type": "Snake",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Main",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -279,10 +217,10 @@
 					"world": {
 						"x": -206,
 						"y": 5046,
-						"width": 48,
-						"height": 36,
-						"originX": 0.5625,
-						"originY": -0.4166666666666667,
+						"width": 100,
+						"height": 62.5,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -509,6 +447,111 @@
 					}
 				},
 				{
+					"type": "Bat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Main",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"instanceVariables": {},
+					"behaviors": {
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						}
+					},
+					"world": {
+						"x": 675,
+						"y": 5052,
+						"width": 64.10000000000001,
+						"height": 61.2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Main",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 51,
+					"instanceVariables": {},
+					"behaviors": {
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						}
+					},
+					"world": {
+						"x": 71,
+						"y": 5003,
+						"width": 64.10000000000001,
+						"height": 61.2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Main",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {},
+					"behaviors": {
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						}
+					},
+					"world": {
+						"x": 310,
+						"y": 4484,
+						"width": 64.10000000000001,
+						"height": 61.2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Jewels",
 					"properties": {
 						"initially-visible": true,
@@ -523,10 +566,10 @@
 					"world": {
 						"x": 945,
 						"y": 300,
-						"width": 41.25,
-						"height": 41.25,
-						"originX": 0.4666666666666667,
-						"originY": 0.5333333333333333,
+						"width": 51.2,
+						"height": 51.2,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -550,12 +593,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -311,
-						"y": 5300,
-						"width": 54,
-						"height": 33,
+						"x": -252,
+						"y": 4784,
+						"width": 125.85,
+						"height": 43.949999999999996,
 						"originX": 0.5,
-						"originY": -0.5454545454545454,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -564,6 +607,86 @@
 						],
 						"angle": 0,
 						"zElevation": 1
+					}
+				},
+				{
+					"type": "Clife",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Main",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1000,
+								"deceleration": 1000,
+								"jump-strength": 675,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1000,
+								"friction": 0,
+								"elasticity": 1,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"color": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 493,
+						"y": 5590,
+						"width": 107.94000000000001,
+						"height": 94.36000000000001,
+						"originX": 0.45395590142671854,
+						"originY": 0.5192878338278932,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
 					}
 				}
 			],
@@ -758,6 +881,35 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 53,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -190,
+						"y": 1975,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

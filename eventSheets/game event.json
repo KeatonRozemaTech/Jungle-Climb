@@ -43,13 +43,33 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "BatDirection",
+			"name": "EnemyHit",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 932946787687145
+			"sid": 774391475899579
+		},
+		{
+			"eventType": "variable",
+			"name": "Lives",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 966649268900898
+		},
+		{
+			"eventType": "variable",
+			"name": "Levels",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 477143843106709
 		},
 		{
 			"eventType": "group",
@@ -380,9 +400,9 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "Clife",
-							"sid": 681963355803628,
+							"sid": 913593992733582,
 							"parameters": {
-								"state": "not-mirrored"
+								"state": "mirrored"
 							}
 						}
 					],
@@ -422,9 +442,9 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "Clife",
-							"sid": 387457888673911,
+							"sid": 792371955445017,
 							"parameters": {
-								"state": "mirrored"
+								"state": "not-mirrored"
 							}
 						}
 					],
@@ -449,22 +469,38 @@
 							"objectClass": "Clife",
 							"sid": 729700516676196,
 							"behaviorType": "Platform"
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 816601586459433,
+							"parameters": {
+								"interval-seconds": ".075"
+							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Clife",
+							"sid": 683238063367458,
+							"parameters": {
+								"frame-number": "Clife.AnimationFrame+1"
+							}
+						}
+					],
 					"sid": 630055534264232,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 461647033677624,
+									"id": "compare-animation-frame",
+									"objectClass": "Clife",
+									"sid": 518106830756456,
 									"parameters": {
-										"first-value": "walkDirection",
-										"comparison": 0,
-										"second-value": "1"
+										"comparison": 2,
+										"number": "45"
 									}
 								}
 							],
@@ -472,25 +508,24 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "Clife",
-									"sid": 181922396016317,
+									"sid": 404238624276837,
 									"parameters": {
-										"frame-number": "6"
+										"frame-number": "45"
 									}
 								}
 							],
-							"sid": 415239740100701
+							"sid": 289453830881050
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 425812934484934,
+									"id": "compare-animation-frame",
+									"objectClass": "Clife",
+									"sid": 636660422392313,
 									"parameters": {
-										"first-value": "walkDirection",
-										"comparison": 0,
-										"second-value": "1"
+										"comparison": 4,
+										"number": "54"
 									}
 								}
 							],
@@ -498,13 +533,13 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "Clife",
-									"sid": 139307673827450,
+									"sid": 835978836684379,
 									"parameters": {
-										"frame-number": "8"
+										"frame-number": "45"
 									}
 								}
 							],
-							"sid": 686116461983304
+							"sid": 634055169162992
 						}
 					]
 				},
@@ -594,16 +629,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Clife",
-							"sid": 170879200822644,
-							"parameters": {
-								"frame-number": "6"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 973085493228619,
 					"isOrBlock": true
 				},
@@ -669,15 +695,22 @@
 								"comparison": 0,
 								"value": "0"
 							}
+						},
+						{
+							"id": "is-jumping",
+							"objectClass": "Clife",
+							"sid": 287004701700231,
+							"behaviorType": "Platform",
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Clife",
-							"sid": 701146288401172,
+							"sid": 616180546575374,
 							"parameters": {
-								"frame-number": "1"
+								"frame-number": "0"
 							}
 						}
 					],
@@ -686,6 +719,12 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "Clife",
+							"sid": 992994762742424,
+							"behaviorType": "Platform"
+						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
@@ -699,9 +738,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 586560676764006,
+							"sid": 484584554760411,
 							"parameters": {
-								"interval-seconds": "0.5"
+								"interval-seconds": ".05"
 							}
 						}
 					],
@@ -723,10 +762,10 @@
 								{
 									"id": "compare-animation-frame",
 									"objectClass": "Clife",
-									"sid": 320499110046906,
+									"sid": 439814957933198,
 									"parameters": {
 										"comparison": 2,
-										"number": "6"
+										"number": "101"
 									}
 								}
 							],
@@ -734,9 +773,9 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "Clife",
-									"sid": 165340254079522,
+									"sid": 785634408965941,
 									"parameters": {
-										"frame-number": "6"
+										"frame-number": "101"
 									}
 								}
 							],
@@ -748,10 +787,10 @@
 								{
 									"id": "compare-animation-frame",
 									"objectClass": "Clife",
-									"sid": 617238036545601,
+									"sid": 330534899828293,
 									"parameters": {
 										"comparison": 4,
-										"number": "8"
+										"number": "115"
 									}
 								}
 							],
@@ -759,15 +798,37 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "Clife",
-									"sid": 853691500791421,
+									"sid": 595685902873236,
 									"parameters": {
-										"frame-number": "6"
+										"frame-number": "101"
 									}
 								}
 							],
 							"sid": 181559194697236
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Clife",
+							"sid": 732669283308938,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Clife",
+							"sid": 491469854710176,
+							"parameters": {
+								"frame-number": "50"
+							}
+						}
+					],
+					"sid": 746653795771538
 				}
 			],
 			"sid": 632676439504581
@@ -1122,6 +1183,307 @@
 			"sid": 449485359273365
 		},
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemys",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 292098434265771,
+							"parameters": {
+								"object": "Bat"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 632795526148237,
+							"parameters": {
+								"variable": "EnemyHit",
+								"comparison": 4,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 783614719088627,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "3"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 440719941111413,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "PlayerHit",
+							"sid": 818755450606343
+						}
+					],
+					"sid": 271074777612525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 560987777588111
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Bat",
+							"sid": 321775791188932,
+							"parameters": {
+								"x": "Self.X+1.5"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Bat",
+							"sid": 292361252414014,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 155765884782791
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 162123470528067
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 790133956971344
+						}
+					],
+					"actions": [
+						{
+							"id": "start-animation",
+							"objectClass": "Bat",
+							"sid": 921787022960827,
+							"parameters": {
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 762154441374251
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 432193854323148,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 285132231774046,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 981134709937947
+				}
+			],
+			"sid": 379815409777551
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Lives",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 476840477593363,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Lives",
+							"sid": 484019632692281,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 414130197732200
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 951771829274314,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Lives",
+							"sid": 690084239802425,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 560298735636532
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 303917906457844,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Lives",
+							"sid": 554935569565821,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 151736500459238
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 939562427626135,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Lives",
+							"sid": 676807152964966,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 402574195368375
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 964999808557491
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 875552689263846,
+							"parameters": {
+								"variable": "Lives",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 694304073617429
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 889363001223349,
+							"parameters": {
+								"variable": "Lives",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 734848139895598,
+							"parameters": {
+								"layout": "Game Over"
+							}
+						}
+					],
+					"sid": 206389877700569
+				}
+			],
+			"sid": 112837905090332
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1131,6 +1493,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Clife",
+					"sid": 663907468415058,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"color\""
+					}
+				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -1149,9 +1520,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 820570155441833,
+							"sid": 191855502357929,
 							"parameters": {
-								"variable": "Level",
+								"variable": "Levels",
 								"comparison": 0,
 								"value": "1"
 							}
@@ -1180,9 +1551,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 856600489247411,
+							"sid": 171263171050753,
 							"parameters": {
-								"variable": "Level",
+								"variable": "Levels",
 								"comparison": 0,
 								"value": "2"
 							}
@@ -1197,7 +1568,7 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
-							"sid": 724863318838607,
+							"sid": 315863184641175,
 							"parameters": {
 								"frame-number": "1"
 							}
@@ -1211,9 +1582,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 657851869721140,
+							"sid": 286427953966481,
 							"parameters": {
-								"variable": "Level",
+								"variable": "Levels",
 								"comparison": 0,
 								"value": "3"
 							}
@@ -1223,7 +1594,7 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
-							"sid": 172148667662455,
+							"sid": 499799412397804,
 							"parameters": {
 								"frame-number": "2"
 							}
@@ -1256,190 +1627,123 @@
 			"sid": 104780362687996
 		},
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Enemys",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"functionName": "PlayerHit",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 672863815483397
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 698789973250983,
-							"parameters": {
-								"variable": "BatDirection",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-x",
-							"objectClass": "Bat",
-							"sid": 316677912584436,
-							"parameters": {
-								"x": "Bat.X+1"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Bat",
-							"sid": 945620820707967,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 746625421868006
+					"id": "set-effect-enabled",
+					"objectClass": "Clife",
+					"sid": 793317387593770,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"color\""
+					}
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 574642161684133
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 894131234299823,
-							"parameters": {
-								"variable": "BatDirection",
-								"comparison": 0,
-								"value": "-1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-x",
-							"objectClass": "Bat",
-							"sid": 122556535898015,
-							"parameters": {
-								"x": "Bat.X-1"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Bat",
-							"sid": 742009323078115,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 469096415987839
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 807613653126875,
+					"parameters": {
+						"opacity": "50"
+					}
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 818379093675993
-						},
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 214785383202724
-						}
-					],
-					"actions": [
-						{
-							"id": "start-animation",
-							"objectClass": "Bat",
-							"sid": 846606089318031,
-							"parameters": {
-								"from": "current-frame"
-							}
-						}
-					],
-					"sid": 933507500581520
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 962671608853530,
+					"parameters": {
+						"seconds": ".25"
+					}
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 761594711110907,
-							"parameters": {
-								"variable": "BatDirection",
-								"comparison": 0,
-								"value": "1"
-							}
-						},
-						{
-							"id": "compare-x",
-							"objectClass": "Bat",
-							"sid": 582056652274615,
-							"parameters": {
-								"comparison": 4,
-								"x-co-ordinate": "968"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 408181176289236,
-							"parameters": {
-								"variable": "BatDirection",
-								"value": "-1"
-							}
-						}
-					],
-					"sid": 762600404829653
+					"id": "set-effect-enabled",
+					"objectClass": "Clife",
+					"sid": 521588979376444,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"color\""
+					}
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 259687170984940,
-							"parameters": {
-								"variable": "BatDirection",
-								"comparison": 0,
-								"value": "-1"
-							}
-						},
-						{
-							"id": "compare-x",
-							"objectClass": "Bat",
-							"sid": 724274671279396,
-							"parameters": {
-								"comparison": 2,
-								"x-co-ordinate": "50"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 518794300703336,
-							"parameters": {
-								"variable": "BatDirection",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 562422399419045
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 612916168748966,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 439893329311653,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 214054841449734,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 268168317791901,
+					"parameters": {
+						"seconds": ".875"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 344555548558350,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 293534611798773,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 811930497654378,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 552664712480986,
+					"parameters": {
+						"seconds": ".875"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 487837666718555,
+					"parameters": {
+						"opacity": "100"
+					}
 				}
 			],
-			"sid": 208071462113772
+			"sid": 556058732095347
 		}
 	],
 	"sid": 582206567344910

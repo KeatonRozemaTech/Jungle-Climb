@@ -88,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -111,9 +119,9 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "wrap",
-			"name": "Wrap",
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Set color",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -173,7 +181,8 @@
 			{
 				"items": [
 					"PlatformsSolid",
-					"Background"
+					"Background",
+					"Sprite"
 				],
 				"subfolders": [],
 				"name": "Platforms"

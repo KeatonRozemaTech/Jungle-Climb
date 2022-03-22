@@ -45,9 +45,9 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 536743887577166,
+					"sid": 289382074337794,
 					"parameters": {
-						"variable": "Level",
+						"variable": "Levels",
 						"value": "1"
 					}
 				},
@@ -75,9 +75,9 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 317054435260042,
+					"sid": 577602627508057,
 					"parameters": {
-						"variable": "Level",
+						"variable": "Levels",
 						"value": "2"
 					}
 				},
@@ -105,9 +105,9 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 734595403160786,
+					"sid": 605375578935644,
 					"parameters": {
-						"variable": "Level",
+						"variable": "Levels",
 						"value": "3"
 					}
 				},

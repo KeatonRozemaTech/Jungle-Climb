@@ -1026,9 +1026,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 569366603883009,
+							"sid": 317153983072396,
 							"parameters": {
-								"interval-seconds": ".015"
+								"interval-seconds": ".02"
 							}
 						},
 						{
@@ -1062,9 +1062,9 @@
 						{
 							"id": "set-y",
 							"objectClass": "Lava",
-							"sid": 725079800391937,
+							"sid": 217796678268236,
 							"parameters": {
-								"y": "Lava.Y - .75"
+								"y": "Lava.Y - .65"
 							}
 						}
 					],
@@ -1291,6 +1291,153 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 618422014103375,
+							"parameters": {
+								"object": "Snake"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 728625094929298,
+							"parameters": {
+								"variable": "EnemyHit",
+								"comparison": 4,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 856525810197416,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "3"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 332030739434054,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "PlayerHit",
+							"sid": 811000304575906
+						}
+					],
+					"sid": 599760011900427
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 286269087387432,
+							"parameters": {
+								"object": "Rat"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 231413465579597,
+							"parameters": {
+								"variable": "EnemyHit",
+								"comparison": 4,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 320735648229530,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "3"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 388609330486364,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "PlayerHit",
+							"sid": 894109236352817
+						}
+					],
+					"sid": 906786992930365
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 560904507675281,
+							"parameters": {
+								"object": "Rock"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 171826941903104,
+							"parameters": {
+								"variable": "EnemyHit",
+								"comparison": 4,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 674997382440501,
+							"parameters": {
+								"variable": "EnemyHit",
+								"value": "3"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 817555139923992,
+							"parameters": {
+								"variable": "Lives",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "PlayerHit",
+							"sid": 315628869880805
+						}
+					],
+					"sid": 305130411666437
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 560987777588111
@@ -1312,9 +1459,48 @@
 							"parameters": {
 								"state": "not-mirrored"
 							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Rock",
+							"sid": 693289077387756,
+							"parameters": {
+								"y": "Self.Y+5"
+							}
 						}
 					],
 					"sid": 155765884782791
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 434292452216421
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Snake",
+							"sid": 126603275234004,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "Rat",
+							"sid": 925270410541336,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 252213191601961
 				},
 				{
 					"eventType": "block",
@@ -1355,6 +1541,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Snake",
+							"sid": 836653199890348,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						},
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
@@ -1412,23 +1607,49 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
+							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 602250609752355
+							"sid": 930652716050200
 						}
 					],
 					"actions": [
 						{
-							"id": "simulate-control",
-							"objectClass": "Snake",
-							"sid": 187050734161757,
-							"behaviorType": "Platform",
+							"id": "set-position",
+							"objectClass": "Rock",
+							"sid": 207754428613590,
 							"parameters": {
-								"control": "right"
+								"x": "random(1,1250)",
+								"y": "Clife.Y-600"
 							}
 						}
 					],
-					"sid": 681803050524371
+					"sid": 848682377684314
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Rock",
+							"sid": 759232589871896,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "Clife.Y+600"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Rock",
+							"sid": 499532694128181,
+							"parameters": {
+								"x": "random(1,1250)",
+								"y": "Clife.Y-600"
+							}
+						}
+					],
+					"sid": 273754236592244
 				}
 			],
 			"sid": 379815409777551

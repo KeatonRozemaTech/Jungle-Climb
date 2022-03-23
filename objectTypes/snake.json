@@ -14,6 +14,16 @@
 			"behaviorId": "Physics",
 			"name": "Physics",
 			"sid": 384836832186122
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 652651538449923
+		},
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 774595808737072
 		}
 	],
 	"effectTypes": [],

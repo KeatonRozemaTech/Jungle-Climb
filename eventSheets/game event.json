@@ -113,19 +113,19 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 258021725140936,
+							"sid": 934332968917856,
 							"parameters": {
 								"variable": "speed",
-								"value": "250"
+								"value": "400"
 							}
 						},
 						{
 							"id": "set-acceleration",
 							"objectClass": "Clife",
-							"sid": 783566059030313,
+							"sid": 586539842562772,
 							"behaviorType": "Platform",
 							"parameters": {
-								"acceleration": "1000"
+								"acceleration": "1500"
 							}
 						},
 						{
@@ -307,10 +307,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 913081180810538,
+							"sid": 657419236604821,
 							"parameters": {
 								"variable": "speed",
-								"value": "450"
+								"value": "600"
 							}
 						},
 						{
@@ -1950,10 +1950,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 203769912073199,
+					"sid": 803642936145871,
 					"parameters": {
 						"variable": "speed",
-						"value": "250"
+						"value": "400"
 					}
 				}
 			],

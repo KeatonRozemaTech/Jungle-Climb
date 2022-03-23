@@ -19,10 +19,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 500,
-						"y": 370,
-						"width": 1024,
-						"height": 768,
+						"x": 1262.0289664379738,
+						"y": 762.5301733728892,
+						"width": 2558.140004450206,
+						"height": 1583.2003511959845,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -41,7 +41,7 @@
 						"text": "Use W to jump, double click to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
 						"enable-bbcode": true,
 						"font": "Comic Sans MS",
-						"size": 50,
+						"size": 100,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -61,10 +61,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 44,
-						"y": 131,
-						"width": 942,
-						"height": 540,
+						"x": 111,
+						"y": 185,
+						"width": 1899,
+						"height": 1303,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -93,10 +93,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 55,
-						"y": 55,
-						"width": 60,
-						"height": 60,
+						"x": 26,
+						"y": 30,
+						"width": 150,
+						"height": 150,
 						"originX": 0,
 						"originY": 0,
 						"color": [

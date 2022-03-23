@@ -19,10 +19,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1250,
-						"y": 750,
-						"width": 2500,
-						"height": 1500,
+						"x": 1258.5248266512133,
+						"y": 750.5014603912479,
+						"width": 2565.1898508622194,
+						"height": 1555.1606430372624,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -51,10 +51,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 350,
-						"y": 250,
-						"width": 150,
-						"height": 100,
+						"x": 400,
+						"y": 599,
+						"width": 500,
+						"height": 300,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -81,10 +81,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 550,
-						"y": 250,
-						"width": 150,
-						"height": 100,
+						"x": 1000,
+						"y": 600,
+						"width": 500,
+						"height": 300,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -111,10 +111,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 750,
-						"y": 250,
-						"width": 150,
-						"height": 100,
+						"x": 1600,
+						"y": 605,
+						"width": 500,
+						"height": 300,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -143,8 +143,8 @@
 					"world": {
 						"x": 55,
 						"y": 55,
-						"width": 60,
-						"height": 60,
+						"width": 150,
+						"height": 150,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -188,7 +188,7 @@
 	"sid": 583719982849067,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 2000,
+	"width": 2500,
 	"height": 1500,
 	"unboundedScrolling": false,
 	"vpX": 0.5,

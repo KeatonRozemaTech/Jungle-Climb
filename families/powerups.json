@@ -7,7 +7,9 @@
 	"effectTypes": [],
 	"members": [
 		"SpringBoots",
-		"WoodCapsule",
-		"LeafBrella"
+		"StoneCapsule",
+		"LeafBrella",
+		"PlayerCapsule",
+		"PlayerLeaf"
 	]
 }

@@ -72,6 +72,26 @@
 			"sid": 477143843106709
 		},
 		{
+			"eventType": "variable",
+			"name": "PowerUps",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 550529201809127
+		},
+		{
+			"eventType": "variable",
+			"name": "PowerTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 855322934964248
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",
@@ -1210,6 +1230,16 @@
 								"value": "0"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 382125013511625,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Stone\""
+							}
 						}
 					],
 					"actions": [
@@ -1259,6 +1289,16 @@
 								"value": "0"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 304382301610129,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Stone\""
+							}
 						}
 					],
 					"actions": [
@@ -1308,6 +1348,16 @@
 								"value": "0"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 773441527258984,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Stone\""
+							}
 						}
 					],
 					"actions": [
@@ -1357,6 +1407,16 @@
 								"value": "0"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 935470158903072,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Stone\""
+							}
 						}
 					],
 					"actions": [
@@ -1406,6 +1466,26 @@
 								"value": "0"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 386099550424038,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Stone\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 755797663154363,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"Leaf\""
+							}
 						}
 					],
 					"actions": [
@@ -1616,10 +1696,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "Rock",
-							"sid": 207754428613590,
+							"sid": 624935004286683,
 							"parameters": {
 								"x": "random(1,1250)",
-								"y": "Clife.Y-600"
+								"y": "Clife.Y-1000"
 							}
 						}
 					],
@@ -1631,10 +1711,10 @@
 						{
 							"id": "compare-y",
 							"objectClass": "Rock",
-							"sid": 759232589871896,
+							"sid": 300970223912716,
 							"parameters": {
 								"comparison": 5,
-								"y-co-ordinate": "Clife.Y+600"
+								"y-co-ordinate": "Clife.Y+1000"
 							}
 						}
 					],
@@ -1642,10 +1722,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "Rock",
-							"sid": 499532694128181,
+							"sid": 801693242901767,
 							"parameters": {
-								"x": "random(1,1250)",
-								"y": "Clife.Y-600"
+								"x": "random(100,1150)",
+								"y": "Clife.Y-1000"
 							}
 						}
 					],
@@ -1981,9 +2061,9 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "Clife",
-					"sid": 807613653126875,
+					"sid": 560902519221335,
 					"parameters": {
-						"opacity": "50"
+						"opacity": "40"
 					}
 				},
 				{
@@ -2002,81 +2082,319 @@
 						"mode": "disable",
 						"effect": "\"color\""
 					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Clife",
-					"sid": 612916168748966,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 439893329311653,
-					"parameters": {
-						"seconds": ".5"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Clife",
-					"sid": 214054841449734,
-					"parameters": {
-						"opacity": "50"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 268168317791901,
-					"parameters": {
-						"seconds": ".875"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Clife",
-					"sid": 344555548558350,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 293534611798773,
-					"parameters": {
-						"seconds": ".5"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Clife",
-					"sid": 811930497654378,
-					"parameters": {
-						"opacity": "50"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 552664712480986,
-					"parameters": {
-						"seconds": ".875"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Clife",
-					"sid": 487837666718555,
-					"parameters": {
-						"opacity": "100"
-					}
 				}
 			],
 			"sid": 556058732095347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 839301981986281,
+					"parameters": {
+						"first-value": "Clife.Opacity",
+						"comparison": 2,
+						"second-value": "100"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 489734250355154,
+					"parameters": {
+						"interval-seconds": ".05"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Clife",
+					"sid": 180409037050580,
+					"parameters": {
+						"opacity": "Clife.Opacity +1"
+					}
+				}
+			],
+			"sid": 304655010340357
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Power Ups",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 509656104580385,
+							"parameters": {
+								"object": "StoneCapsule"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 639634740375756,
+							"parameters": {
+								"variable": "PowerTime",
+								"value": "7"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 558857499636818,
+							"parameters": {
+								"variable": "PowerUps",
+								"value": "\"Stone\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerCapsule",
+							"sid": 189630283158164,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "StoneCapsule",
+							"sid": 876715720370506
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PlayerCapsule",
+							"sid": 967132384963260,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 107431629515812
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 729535358477019,
+							"parameters": {
+								"object": "LeafBrella"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 488723431993794,
+							"parameters": {
+								"variable": "PowerTime",
+								"value": "15"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 605444672156662,
+							"parameters": {
+								"variable": "PowerUps",
+								"value": "\"Leaf\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerLeaf",
+							"sid": 535895563085706,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "LeafBrella",
+							"sid": 221400650148634
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PlayerLeaf",
+							"sid": 957313095604408,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 605112976764670
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 865417319850441
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PlayerCapsule",
+							"sid": 225663059196978,
+							"parameters": {
+								"x": "Clife.X",
+								"y": "Clife.Y"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "PlayerCapsule",
+							"sid": 610218909905216
+						},
+						{
+							"id": "set-position",
+							"objectClass": "PlayerLeaf",
+							"sid": 768452645421339,
+							"parameters": {
+								"x": "Clife.X",
+								"y": "Clife.Y-105"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "PlayerLeaf",
+							"sid": 888273501146530
+						}
+					],
+					"sid": 566793892186608
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 191593285812065,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 1,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 279407432422391,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 498912368597709,
+							"parameters": {
+								"variable": "PowerTime",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PlayerCapsule",
+							"sid": 544676534418050,
+							"parameters": {
+								"frame-number": "PlayerCapsule.AnimationFrame+1"
+							}
+						}
+					],
+					"sid": 328795589387024
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 574787693072305,
+							"parameters": {
+								"variable": "PowerTime",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 831704473664827,
+							"parameters": {
+								"variable": "PowerUps",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerCapsule",
+							"sid": 138689514229210,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerLeaf",
+							"sid": 241907153708057,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 612991875668651
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 289264258723170
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerCapsule",
+							"sid": 506644737096968,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerLeaf",
+							"sid": 657207778043191,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 740000420102414
+				}
+			],
+			"sid": 648069928574174
 		}
 	],
 	"sid": 582206567344910

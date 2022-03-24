@@ -1,14 +1,14 @@
 {
-	"name": "LeafBrella",
+	"name": "PlayerLeaf",
 	"plugin-id": "Sprite",
-	"sid": 905062672515476,
+	"sid": 778111070098338,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
 			"name": "Physics",
-			"sid": 806018914727501
+			"sid": 976247941032715
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4129382,
+						"imageSpriteId": 5928086,
 						"collisionPoly": {
 							"points": [
 								0.1015625,
@@ -49,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 286845407743177,
+				"sid": 209427400637046,
 				"name": "Main",
 				"isLooping": false,
 				"isPingPong": false,

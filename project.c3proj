@@ -48,16 +48,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Mouse",
-			"name": "Mouse",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -72,8 +72,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -139,31 +139,16 @@
 	"objectTypes": {
 		"items": [
 			"Clife",
-			"Lives",
-			"Keyboard",
-			"Timer",
-			"PowerSlot",
-			"Text",
-			"Lava",
-			"Play",
-			"Pause",
-			"playagain",
-			"GameOver",
-			"Mouse",
-			"TextInput",
-			"UserName",
-			"Title",
-			"SaveGame",
-			"LoadGame",
-			"Browser",
-			"Victory"
+			"Lava"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"SpringBoots",
 					"LeafBrella",
-					"WoodCapsule"
+					"StoneCapsule",
+					"PlayerCapsule",
+					"PlayerLeaf"
 				],
 				"subfolders": [],
 				"name": "Gadgets"
@@ -207,10 +192,44 @@
 					"StartBackground",
 					"Website",
 					"Feedback",
-					"Settingsbutton"
+					"Settingsbutton",
+					"Title"
 				],
 				"subfolders": [],
 				"name": "Start"
+			},
+			{
+				"items": [
+					"Pause",
+					"Play",
+					"Lives",
+					"Timer",
+					"Keyboard",
+					"Mouse",
+					"PowerSlot",
+					"Browser"
+				],
+				"subfolders": [],
+				"name": "UI"
+			},
+			{
+				"items": [
+					"TextInput",
+					"UserName",
+					"LoadGame",
+					"SaveGame"
+				],
+				"subfolders": [],
+				"name": "Settings"
+			},
+			{
+				"items": [
+					"Victory",
+					"GameOver",
+					"playagain"
+				],
+				"subfolders": [],
+				"name": "Game End"
 			}
 		]
 	},

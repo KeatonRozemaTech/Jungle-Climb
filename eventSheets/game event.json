@@ -92,6 +92,16 @@
 			"sid": 855322934964248
 		},
 		{
+			"eventType": "variable",
+			"name": "Mobile",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 922885953781400
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",
@@ -327,10 +337,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 657419236604821,
+							"sid": 973219404499467,
 							"parameters": {
 								"variable": "speed",
-								"value": "600"
+								"value": "800"
 							}
 						},
 						{
@@ -2450,10 +2460,10 @@
 						{
 							"id": "set-jump-strength",
 							"objectClass": "Clife",
-							"sid": 765863655171956,
+							"sid": 154951800079838,
 							"behaviorType": "Platform",
 							"parameters": {
-								"jump-strength": "2000"
+								"jump-strength": "1500"
 							}
 						}
 					],

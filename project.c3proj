@@ -148,7 +148,8 @@
 		"items": [
 			"Clife",
 			"Lava",
-			"WinBackground"
+			"WinBackground",
+			"Mobile"
 		],
 		"subfolders": [
 			{

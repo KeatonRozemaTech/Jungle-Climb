@@ -105,6 +105,18 @@
 				}
 			],
 			"sid": 611533118678015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-checked",
+					"objectClass": "Mobile",
+					"sid": 364310335693901
+				}
+			],
+			"actions": [],
+			"sid": 838890092509157
 		}
 	],
 	"sid": 633727005369076

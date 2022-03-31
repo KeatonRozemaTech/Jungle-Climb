@@ -1943,11 +1943,6 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "PlatformsSolid",
-							"sid": 347499682497634
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
 							"sid": 185902261280648,
@@ -1976,7 +1971,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "PlatformsSolid",
-							"sid": 499999387802330
+							"sid": 712866417441600
 						},
 						{
 							"id": "set-animation-frame",
@@ -2004,6 +1999,11 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid",
+							"sid": 884699621814259
+						},
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
@@ -2241,6 +2241,45 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Clife",
+							"sid": 444214438171994,
+							"parameters": {
+								"object": "SpringBoots"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 906826960456649,
+							"parameters": {
+								"variable": "PowerTime",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 145585691795604,
+							"parameters": {
+								"variable": "PowerUps",
+								"value": "\"Spring\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SpringBoots",
+							"sid": 214727729371680
+						}
+					],
+					"sid": 950464196481545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 865417319850441
@@ -2392,6 +2431,61 @@
 						}
 					],
 					"sid": 740000420102414
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 890076975678223,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"Spring\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Clife",
+							"sid": 765863655171956,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "2000"
+							}
+						}
+					],
+					"sid": 168579596064684
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 487120386880664,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"Spring\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Clife",
+							"sid": 869927672363491,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "1100"
+							}
+						}
+					],
+					"sid": 909991187634776
 				}
 			],
 			"sid": 648069928574174

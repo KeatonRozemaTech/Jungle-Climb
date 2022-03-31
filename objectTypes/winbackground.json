@@ -1,16 +1,11 @@
 {
-	"name": "Lava",
+	"name": "WinBackground",
 	"plugin-id": "TiledBg",
-	"sid": 824402676049516,
+	"sid": 533326815893590,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 128,
 		"height": 128,
@@ -19,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3202915,
+		"imageSpriteId": 739946,
 		"useCollisionPoly": true
 	}
 }

@@ -374,10 +374,10 @@
 						}
 					},
 					"world": {
-						"x": -183,
-						"y": 5251,
-						"width": 35.25,
-						"height": 33,
+						"x": 622,
+						"y": 5037,
+						"width": 94,
+						"height": 88,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -500,6 +500,21 @@
 					"uid": 30,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"parameters": {
+								"speed": 0.05,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 5,
+								"frequency": 1,
+								"angle": 7,
+								"delta": 50,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
 					"world": {
 						"x": -129,
 						"y": 7784,
@@ -861,11 +876,11 @@
 						"Platform": {
 							"properties": {
 								"max-speed": 330,
-								"acceleration": 1500,
+								"acceleration": 3000,
 								"deceleration": 1000,
 								"jump-strength": 1100,
-								"gravity": 1500,
-								"max-fall-speed": 2000,
+								"gravity": 2000,
+								"max-fall-speed": 5000,
 								"double-jump": true,
 								"jump-sustain": 0,
 								"default-controls": false,

@@ -1,5 +1,44 @@
 {
 	"name": "Victory Condition",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "playagain",
+					"sid": 657250099071438
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 439855433433838,
+					"parameters": {
+						"layout": "Level Select"
+					}
+				}
+			],
+			"sid": 697693446035051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 771695543994465
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Button CSS",
+					"sid": 252263480407165
+				}
+			],
+			"sid": 739359905234691
+		}
+	],
 	"sid": 536870899942076
 }

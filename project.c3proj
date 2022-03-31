@@ -133,13 +133,22 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
 			"Clife",
-			"Lava"
+			"Lava",
+			"WinBackground"
 		],
 		"subfolders": [
 			{
@@ -193,7 +202,8 @@
 					"Website",
 					"Feedback",
 					"Settingsbutton",
-					"Title"
+					"Title",
+					"BeginStory"
 				],
 				"subfolders": [],
 				"name": "Start"

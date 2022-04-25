@@ -102,6 +102,26 @@
 			"sid": 922885953781400
 		},
 		{
+			"eventType": "variable",
+			"name": "LavaAcc",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 375324988206305
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeStart",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 827176326465743
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",
@@ -1092,9 +1112,18 @@
 						{
 							"id": "set-y",
 							"objectClass": "Lava",
-							"sid": 217796678268236,
+							"sid": 176762504598359,
 							"parameters": {
-								"y": "Lava.Y - .65"
+								"y": "Lava.Y - (((round(time)-round(LevelTimeStart))*(round(time)-round(LevelTimeStart))*.0005596)+((round(time)-round(LevelTimeStart))*.03344)+1.05)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 523015248589875,
+							"parameters": {
+								"variable": "LavaAcc",
+								"value": ".004"
 							}
 						}
 					],
@@ -1933,6 +1962,15 @@
 						"variable": "LevelTimeStart",
 						"value": "time"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 476662204061270,
+					"parameters": {
+						"variable": "LavaAcc",
+						"value": "1.2"
+					}
 				}
 			],
 			"sid": 213460465106336,
@@ -1959,6 +1997,25 @@
 							"parameters": {
 								"frame-number": "0"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid2",
+							"sid": 810802762852909
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid3",
+							"sid": 848652433034603
+						},
+						{
+							"id": "set-position",
+							"objectClass": "PlatformsSolid",
+							"sid": 739391559386612,
+							"parameters": {
+								"x": "0",
+								"y": "3200"
+							}
 						}
 					],
 					"sid": 253528376091249
@@ -1984,12 +2041,50 @@
 							"sid": 712866417441600
 						},
 						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid3",
+							"sid": 273117536223607
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 549168332447043
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PowerUps",
+							"sid": 835861601895188
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Rock",
+							"sid": 713820288450619
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Bat",
+							"sid": 791425840329184
+						},
+						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
 							"sid": 315863184641175,
 							"parameters": {
 								"frame-number": "1"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "PlatformsSolid2",
+							"sid": 785661439353870,
+							"parameters": {
+								"x": "0",
+								"y": "100"
+							}
+						},
+						{
+							"callFunction": "Level2Enemies",
+							"sid": 222129738103032
 						}
 					],
 					"sid": 316414035859521
@@ -2015,11 +2110,25 @@
 							"sid": 884699621814259
 						},
 						{
+							"id": "destroy",
+							"objectClass": "PlatformsSolid2",
+							"sid": 636506540696311
+						},
+						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
 							"sid": 499799412397804,
 							"parameters": {
 								"frame-number": "2"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "PlatformsSolid3",
+							"sid": 341773092033599,
+							"parameters": {
+								"x": "0",
+								"y": "3200"
 							}
 						}
 					],
@@ -2499,6 +2608,18 @@
 				}
 			],
 			"sid": 648069928574174
+		},
+		{
+			"functionName": "Level2Enemies",
+			"functionDescription": "Setting enemies for level 2",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 215285358555905
 		}
 	],
 	"sid": 582206567344910

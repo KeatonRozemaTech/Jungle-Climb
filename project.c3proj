@@ -133,14 +133,6 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "waterbg",
-			"name": "Water background",
-			"author": "Viktor Korsun",
-			"version": "r285.3",
-			"bundled": false
 		}
 	],
 	"uniqueId": "zaq4crkgrqq",
@@ -185,7 +177,10 @@
 				"items": [
 					"PlatformsSolid",
 					"Background",
-					"Sprite"
+					"Sprite",
+					"PlatformsSolid2",
+					"PlatformsSolid3",
+					"Sprite2"
 				],
 				"subfolders": [],
 				"name": "Platforms"
@@ -262,7 +257,9 @@
 			"Level Select",
 			"Game Over",
 			"Settings Screen",
-			"Victory Page"
+			"Victory Page",
+			"Level 2",
+			"Level 3"
 		],
 		"subfolders": []
 	},

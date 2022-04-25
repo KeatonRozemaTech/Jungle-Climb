@@ -84,7 +84,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 215741261012779,
+					"sid": 915282583893721,
 					"parameters": {
 						"layout": "Game"
 					}
@@ -114,7 +114,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 884270128093970,
+					"sid": 942085160208907,
 					"parameters": {
 						"layout": "Game"
 					}

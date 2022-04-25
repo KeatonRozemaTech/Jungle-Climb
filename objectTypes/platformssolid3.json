@@ -1,0 +1,32 @@
+{
+	"name": "PlatformsSolid3",
+	"plugin-id": "Tilemap",
+	"sid": 578541535566280,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 324480694630241
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 436861724296896
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 1000,
+		"height": 930,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9304680,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

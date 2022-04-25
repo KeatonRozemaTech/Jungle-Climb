@@ -5,12 +5,7 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 128,
 		"height": 128,

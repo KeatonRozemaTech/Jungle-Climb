@@ -2066,6 +2066,11 @@
 							"sid": 791425840329184
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Dragon",
+							"sid": 749843452748591
+						},
+						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
 							"sid": 315863184641175,
@@ -2130,6 +2135,25 @@
 								"x": "0",
 								"y": "3200"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 945404574553781
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PowerUps",
+							"sid": 611189820710172
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Rock",
+							"sid": 517204926236058
+						},
+						{
+							"callFunction": "Level3Enemies",
+							"sid": 209166424886445
 						}
 					],
 					"sid": 805304927809785
@@ -2618,8 +2642,33 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 524991850627603,
+					"parameters": {
+						"object-to-create": "Snake",
+						"layer": "0",
+						"x": "900",
+						"y": "13400",
+						"create-hierarchy": false
+					}
+				}
+			],
 			"sid": 215285358555905
+		},
+		{
+			"functionName": "Level3Enemies",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 556410408752807
 		}
 	],
 	"sid": 582206567344910

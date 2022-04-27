@@ -2115,6 +2115,21 @@
 							"sid": 636506540696311
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 724011541304580
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Rock",
+							"sid": 206108477169142
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PowerUps",
+							"sid": 513791262067788
+						},
+						{
 							"id": "set-animation-frame",
 							"objectClass": "Background",
 							"sid": 499799412397804,
@@ -2130,6 +2145,11 @@
 								"x": "0",
 								"y": "3200"
 							}
+
+						},
+						{
+							"callFunction": "Level3Enemies",
+							"sid": 235953082858800
 						}
 					],
 					"sid": 805304927809785
@@ -2620,6 +2640,31 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 215285358555905
+		},
+		{
+			"functionName": "Level3Enemies",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 357025693289061,
+					"parameters": {
+						"object-to-create": "Snake",
+						"layer": "1",
+						"x": "645",
+						"y": "13300",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 899898067810989
 		}
 	],
 	"sid": 582206567344910

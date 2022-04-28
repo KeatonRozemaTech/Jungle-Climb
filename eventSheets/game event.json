@@ -1370,6 +1370,62 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "has-los-to-object",
+							"objectClass": "Dragon",
+							"sid": 371919004858878,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Clife",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "Dragon",
+							"sid": 646222581457716,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Clife.x",
+								"y": "Clife.y",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 608964208252910,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "Dragon",
+									"sid": 180847181384489,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Clife",
+										"image-point": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Dragon",
+									"sid": 645916383857678,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"sid": 299763377913152
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Clife",
 							"sid": 618422014103375,
@@ -2057,11 +2113,6 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "Rock",
-							"sid": 713820288450619
-						},
-						{
-							"id": "destroy",
 							"objectClass": "Bat",
 							"sid": 791425840329184
 						},
@@ -2145,7 +2196,6 @@
 								"x": "0",
 								"y": "3200"
 							}
-
 						},
 						{
 							"callFunction": "Level3Enemies",
@@ -2660,6 +2710,66 @@
 						"layer": "1",
 						"x": "645",
 						"y": "13300",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 323379661153302,
+					"parameters": {
+						"object-to-create": "Rat",
+						"layer": "1",
+						"x": "2033",
+						"y": "11000",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 713795122030306,
+					"parameters": {
+						"object-to-create": "LeafBrella",
+						"layer": "1",
+						"x": "1853",
+						"y": "11230",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 918493976300955,
+					"parameters": {
+						"object-to-create": "Dragon",
+						"layer": "1",
+						"x": "1300",
+						"y": "4000",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 276611204203092,
+					"parameters": {
+						"object-to-create": "Rock",
+						"layer": "0",
+						"x": "2200",
+						"y": "5500",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 828910555956660,
+					"parameters": {
+						"object-to-create": "Rat",
+						"layer": "1",
+						"x": "1100",
+						"y": "7126",
 						"create-hierarchy": false
 					}
 				}

@@ -96,6 +96,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "wrap",
 			"name": "Wrap",
 			"author": "Scirra",
@@ -104,8 +120,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "LOS",
-			"name": "Line of sight",
+			"id": "custom",
+			"name": "Custom",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false

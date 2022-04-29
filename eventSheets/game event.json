@@ -2061,6 +2061,16 @@
 						},
 						{
 							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 496401861816823
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PowerUps",
+							"sid": 346799000793602
+						},
+						{
+							"id": "destroy",
 							"objectClass": "PlatformsSolid3",
 							"sid": 848652433034603
 						},
@@ -2072,6 +2082,10 @@
 								"x": "0",
 								"y": "3200"
 							}
+						},
+						{
+							"callFunction": "Level1Enemies",
+							"sid": 872279246412811
 						}
 					],
 					"sid": 253528376091249
@@ -2680,6 +2694,180 @@
 			"sid": 648069928574174
 		},
 		{
+			"functionName": "Level1Enemies",
+			"functionDescription": "Setting enemies for level 1",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 257291378012308,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2000",
+						"y": "13670",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 781924138775016,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1500",
+						"y": "13170",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 951618553713420,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1110",
+						"y": "12590",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 222101419482328,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1130",
+						"y": "9170",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 871726853092934,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1000",
+						"y": "7050",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 324213073023366,
+					"parameters": {
+						"object-to-create": "StoneCapsule",
+						"layer": "1",
+						"x": "1500",
+						"y": "9000",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 342880480141182,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2000",
+						"y": "5300",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 482692284054050,
+					"parameters": {
+						"object-to-create": "LeafBrella",
+						"layer": "1",
+						"x": "1853",
+						"y": "11230",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 634792950267617,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2500",
+						"y": "4900",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 915516929647564,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1300",
+						"y": "3500",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 654396225585418,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1300",
+						"y": "2400",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 234228958902241,
+					"parameters": {
+						"object-to-create": "StoneCapsule",
+						"layer": "1",
+						"x": "150",
+						"y": "13630",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jewels",
+					"sid": 897670106801330,
+					"parameters": {
+						"x": "300",
+						"y": "7200"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Jewels",
+					"sid": 364057454562013,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 294525974121902
+		},
+		{
 			"functionName": "Level2Enemies",
 			"functionDescription": "Setting enemies for level 2",
 			"functionCategory": "",
@@ -2688,7 +2876,181 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 468152296160603,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2000",
+						"y": "12000",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 384033980750285,
+					"parameters": {
+						"object-to-create": "Dragon",
+						"layer": "1",
+						"x": "1500",
+						"y": "11500",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 476497943531641,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1110",
+						"y": "11400",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 512580538791986,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1130",
+						"y": "9170",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 337721258960443,
+					"parameters": {
+						"object-to-create": "Rat",
+						"layer": "1",
+						"x": "1000",
+						"y": "7050",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 361112421413281,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1500",
+						"y": "7050",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 844576372011800,
+					"parameters": {
+						"object-to-create": "StoneCapsule",
+						"layer": "1",
+						"x": "750",
+						"y": "7500",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 614560740349119,
+					"parameters": {
+						"object-to-create": "Snake",
+						"layer": "1",
+						"x": "2000",
+						"y": "7050",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 358334950730267,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2000",
+						"y": "5300",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 199599327301746,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "2500",
+						"y": "4900",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 876175105121263,
+					"parameters": {
+						"object-to-create": "Bat",
+						"layer": "1",
+						"x": "1300",
+						"y": "3500",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 159257681843761,
+					"parameters": {
+						"object-to-create": "Rat",
+						"layer": "1",
+						"x": "1300",
+						"y": "2400",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 230945783395040,
+					"parameters": {
+						"object-to-create": "SpringBoots",
+						"layer": "1",
+						"x": "2000",
+						"y": "11887",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jewels",
+					"sid": 229178200970046,
+					"parameters": {
+						"x": "300",
+						"y": "600"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Jewels",
+					"sid": 243342560591910,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
 			"sid": 215285358555905
 		},
 		{
@@ -2771,6 +3133,23 @@
 						"x": "1100",
 						"y": "7126",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jewels",
+					"sid": 492810969135230,
+					"parameters": {
+						"x": "300",
+						"y": "3700"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Jewels",
+					"sid": 821504738505849,
+					"parameters": {
+						"frame-number": "2"
 					}
 				}
 			],

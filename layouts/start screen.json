@@ -52,7 +52,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 900,
-						"y": 250,
+						"y": 450,
 						"width": 700,
 						"height": 200,
 						"originX": 0,
@@ -82,7 +82,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 900,
-						"y": 460,
+						"y": 670,
 						"width": 340,
 						"height": 200,
 						"originX": 0,
@@ -113,66 +113,6 @@
 					"world": {
 						"x": 1260,
 						"y": 670,
-						"width": 340,
-						"height": 200,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "Feedback",
-					"properties": {
-						"type": "button",
-						"text": "Feedback",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 37,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 900,
-						"y": 670,
-						"width": 340,
-						"height": 200,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "Settingsbutton",
-					"properties": {
-						"type": "button",
-						"text": "SETTINGS",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 38,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1260,
-						"y": 460,
 						"width": 340,
 						"height": 200,
 						"originX": 0,

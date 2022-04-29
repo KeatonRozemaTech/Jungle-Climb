@@ -48,27 +48,6 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "Settingsbutton",
-					"sid": 488896789772894
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 610751288429014,
-					"parameters": {
-						"layout": "Settings Screen"
-					}
-				}
-			],
-			"sid": 211501077384777
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
 					"objectClass": "Website",
 					"sid": 825684683232377
 				}

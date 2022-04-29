@@ -19,6 +19,11 @@
 			"behaviorId": "wrap",
 			"name": "Wrap",
 			"sid": 112541072347882
+		},
+		{
+			"behaviorId": "custom",
+			"name": "Custom",
+			"sid": 893208693978363
 		}
 	],
 	"effectTypes": [],

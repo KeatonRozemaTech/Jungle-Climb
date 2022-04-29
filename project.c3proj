@@ -64,14 +64,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TextBox",
-			"name": "Text input",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
@@ -96,6 +88,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "wrap",
 			"name": "Wrap",
 			"author": "Scirra",
@@ -104,8 +112,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "LOS",
-			"name": "Line of sight",
+			"id": "custom",
+			"name": "Custom",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -140,8 +148,7 @@
 		"items": [
 			"Clife",
 			"Lava",
-			"WinBackground",
-			"Mobile"
+			"WinBackground"
 		],
 		"subfolders": [
 			{
@@ -177,10 +184,8 @@
 				"items": [
 					"PlatformsSolid",
 					"Background",
-					"Sprite",
 					"PlatformsSolid2",
-					"PlatformsSolid3",
-					"Sprite2"
+					"PlatformsSolid3"
 				],
 				"subfolders": [],
 				"name": "Platforms"
@@ -196,10 +201,7 @@
 					"Level3",
 					"StartBackground",
 					"Website",
-					"Feedback",
-					"Settingsbutton",
-					"Title",
-					"BeginStory"
+					"Title"
 				],
 				"subfolders": [],
 				"name": "Start"
@@ -217,16 +219,6 @@
 				],
 				"subfolders": [],
 				"name": "UI"
-			},
-			{
-				"items": [
-					"TextInput",
-					"UserName",
-					"LoadGame",
-					"SaveGame"
-				],
-				"subfolders": [],
-				"name": "Settings"
 			},
 			{
 				"items": [
@@ -256,10 +248,7 @@
 			"Help Screen",
 			"Level Select",
 			"Game Over",
-			"Settings Screen",
-			"Victory Page",
-			"Level 2",
-			"Level 3"
+			"Victory Page"
 		],
 		"subfolders": []
 	},

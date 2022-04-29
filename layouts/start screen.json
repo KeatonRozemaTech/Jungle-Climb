@@ -166,6 +166,66 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "HelpButton",
+					"properties": {
+						"type": "button",
+						"text": "SAVE GAME",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 37,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 900,
+						"y": 890,
+						"width": 340,
+						"height": 200,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "HelpButton",
+					"properties": {
+						"type": "button",
+						"text": "LOAD GAME",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 38,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1260,
+						"y": 890,
+						"width": 340,
+						"height": 200,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 459710081850852,

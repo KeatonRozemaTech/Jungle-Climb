@@ -122,6 +122,16 @@
 			"sid": 827176326465743
 		},
 		{
+			"eventType": "variable",
+			"name": "playerLevel",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 240503944300469
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",
@@ -1058,7 +1068,63 @@
 							}
 						}
 					],
-					"sid": 401705725346802
+					"sid": 401705725346802,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 222319991561331,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 508538401530213,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 308601731938820
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 374220888958419,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 146654858123888,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 700158439421738
+						}
+					]
 				}
 			],
 			"sid": 608574359728540

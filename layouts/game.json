@@ -818,8 +818,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 5188,
-						"y": -3,
+						"x": -2395,
+						"y": -217,
 						"width": 2600,
 						"height": 14954,
 						"originX": 0,
@@ -1295,9 +1295,9 @@
 					"world": {
 						"x": 272,
 						"y": 33,
-						"width": 200,
-						"height": 60,
-						"originX": 0.26,
+						"width": 350,
+						"height": 128,
+						"originX": 0.09508571428571429,
 						"originY": -0.045454545454545456,
 						"color": [
 							1,
@@ -1335,8 +1335,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 350,
-						"y": 15,
+						"x": 464,
+						"y": -169,
 						"width": 350,
 						"height": 47,
 						"originX": 0,

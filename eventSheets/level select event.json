@@ -69,6 +69,16 @@
 					"id": "on-clicked",
 					"objectClass": "Level2",
 					"sid": 611595164608955
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 839898675233441,
+					"parameters": {
+						"variable": "playerLevel",
+						"comparison": 5,
+						"value": "2"
+					}
 				}
 			],
 			"actions": [
@@ -99,6 +109,16 @@
 					"id": "on-clicked",
 					"objectClass": "Level3",
 					"sid": 839717317434587
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 263835413247993,
+					"parameters": {
+						"variable": "playerLevel",
+						"comparison": 5,
+						"value": "3"
+					}
 				}
 			],
 			"actions": [
@@ -137,7 +157,72 @@
 					"sid": 407715749513764
 				}
 			],
-			"sid": 993680775124043
+			"sid": 993680775124043,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 125696898563752,
+							"parameters": {
+								"variable": "playerLevel",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 121992407153014,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#4f4f4f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 350669211221701,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#4f4f4f\""
+							}
+						}
+					],
+					"sid": 720354687122891
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 777247445465897,
+							"parameters": {
+								"variable": "playerLevel",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 493141390358647,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#4f4f4f\""
+							}
+						}
+					],
+					"sid": 674369064058749
+				}
+			]
 		}
 	],
 	"sid": 887526160914761

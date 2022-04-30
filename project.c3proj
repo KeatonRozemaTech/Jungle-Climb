@@ -66,6 +66,17 @@
 			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
+<<<<<<< HEAD
+=======
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -148,7 +159,13 @@
 		"items": [
 			"Clife",
 			"Lava",
+<<<<<<< HEAD
 			"WinBackground"
+=======
+			"WinBackground",
+			"LocalStorage",
+			"Sprite"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 		],
 		"subfolders": [
 			{
@@ -201,7 +218,13 @@
 					"Level3",
 					"StartBackground",
 					"Website",
+<<<<<<< HEAD
 					"Title"
+=======
+					"Title",
+					"SaveButton",
+					"LoadButton"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 				],
 				"subfolders": [],
 				"name": "Start"
@@ -248,7 +271,12 @@
 			"Help Screen",
 			"Level Select",
 			"Game Over",
+<<<<<<< HEAD
 			"Victory Page"
+=======
+			"Victory Page",
+			"Story Page"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 		],
 		"subfolders": []
 	},
@@ -259,7 +287,8 @@
 			"Help Event",
 			"Level Select Event",
 			"Game Over Event",
-			"Victory Condition"
+			"Victory Condition",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -387,11 +416,11 @@
 			1,
 			0
 		],
-		"useThemeColor": false,
+		"useThemeColor": true,
 		"themeColor": [
-			1,
-			1,
-			1,
+			0,
+			0,
+			0,
 			0
 		],
 		"orientations": "landscape",

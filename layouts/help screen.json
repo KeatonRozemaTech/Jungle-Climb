@@ -38,10 +38,10 @@
 				{
 					"type": "HelpText",
 					"properties": {
-						"text": "Use W to jump, double click to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
+						"text": "Use W to jump, double click the jump key to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
 						"enable-bbcode": true,
 						"font": "Comic Sans MS",
-						"size": 100,
+						"size": 55,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -61,10 +61,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 314.5,
-						"y": 267.5,
-						"width": 1871,
-						"height": 965,
+						"x": 43,
+						"y": 233,
+						"width": 1563,
+						"height": 348,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -105,6 +105,90 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "HelpText",
+					"properties": {
+						"text": "Collect power ups for new abilities such as increased jumping and invulnerability.",
+						"enable-bbcode": true,
+						"font": "Comic Sans MS",
+						"size": 55,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 40,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1017,
+						"y": 600,
+						"width": 1563,
+						"height": 246,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HelpText",
+					"properties": {
+						"text": "Aquire all three jewels and save the world before it is too late!",
+						"enable-bbcode": true,
+						"font": "Comic Sans MS",
+						"size": 55,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 51,
+						"y": 882,
+						"width": 1563,
+						"height": 246,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

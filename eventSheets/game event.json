@@ -122,6 +122,26 @@
 			"sid": 827176326465743
 		},
 		{
+			"eventType": "variable",
+			"name": "playerLevel",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 240503944300469
+		},
+		{
+			"eventType": "variable",
+			"name": "storyPlayed",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 135450012984479
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",
@@ -1058,7 +1078,90 @@
 							}
 						}
 					],
-					"sid": 401705725346802
+					"sid": 401705725346802,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 264510417527615,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 148678302746467,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "4"
+									}
+								}
+							],
+							"sid": 587357491755077
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 222319991561331,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 508538401530213,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 308601731938820
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 374220888958419,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 146654858123888,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 700158439421738
+						}
+					]
 				}
 			],
 			"sid": 608574359728540
@@ -1391,6 +1494,7 @@
 								"y": "Clife.y",
 								"mode": "direct"
 							}
+<<<<<<< HEAD
 						},
 						{
 							"id": "set-angle",
@@ -1399,6 +1503,8 @@
 							"parameters": {
 								"angle": "360"
 							}
+=======
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 						}
 					],
 					"sid": 608964208252910,
@@ -1424,6 +1530,7 @@
 									"objectClass": "Dragon",
 									"sid": 645916383857678,
 									"behaviorType": "MoveTo"
+<<<<<<< HEAD
 								},
 								{
 									"id": "set-angle",
@@ -1432,6 +1539,8 @@
 									"parameters": {
 										"angle": "360"
 									}
+=======
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 								}
 							],
 							"sid": 299763377913152
@@ -2202,6 +2311,14 @@
 						},
 						{
 							"id": "destroy",
+<<<<<<< HEAD
+=======
+							"objectClass": "Rock",
+							"sid": 206108477169142
+						},
+						{
+							"id": "destroy",
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 							"objectClass": "PowerUps",
 							"sid": 513791262067788
 						},
@@ -2861,10 +2978,17 @@
 				{
 					"id": "set-position",
 					"objectClass": "Jewels",
+<<<<<<< HEAD
 					"sid": 897670106801330,
 					"parameters": {
 						"x": "300",
 						"y": "7200"
+=======
+					"sid": 738244145726800,
+					"parameters": {
+						"x": "300",
+						"y": "7175"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 					}
 				},
 				{
@@ -3089,6 +3213,7 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 413458342079667,
 					"parameters": {
 						"object-to-create": "Snake",
@@ -3101,6 +3226,8 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+=======
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 					"sid": 323379661153302,
 					"parameters": {
 						"object-to-create": "Rat",
@@ -3159,6 +3286,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 117369447655645,
@@ -3293,6 +3421,14 @@
 					"parameters": {
 						"x": "300",
 						"y": "3700"
+=======
+					"id": "set-position",
+					"objectClass": "Jewels",
+					"sid": 904300612784515,
+					"parameters": {
+						"x": "300",
+						"y": "3675"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 					}
 				},
 				{

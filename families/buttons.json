@@ -12,6 +12,12 @@
 		"Level2",
 		"Level3",
 		"playagain",
+<<<<<<< HEAD
 		"Website"
+=======
+		"Website",
+		"SaveButton",
+		"LoadButton"
+>>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 	]
 }

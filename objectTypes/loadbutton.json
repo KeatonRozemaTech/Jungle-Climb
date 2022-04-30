@@ -1,7 +1,7 @@
 {
-	"name": "Settingsbutton",
+	"name": "LoadButton",
 	"plugin-id": "Button",
-	"sid": 799675385036815,
+	"sid": 701126630996565,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": []

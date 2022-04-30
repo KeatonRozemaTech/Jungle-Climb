@@ -131,10 +131,10 @@
 				{
 					"id": "set-css-style",
 					"objectClass": "Buttons",
-					"sid": 311176808322857,
+					"sid": 440805543726183,
 					"parameters": {
 						"property-name": "\"font-size\"",
-						"value": "\".955em\""
+						"value": "\"1.5em\""
 					}
 				},
 				{
@@ -144,6 +144,24 @@
 					"parameters": {
 						"property-name": "\"text-align\"",
 						"value": "\"center\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 829713303661676,
+					"parameters": {
+						"property-name": "\"font-family\"",
+						"value": "\"'Courier New', monospace\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 598484775720707,
+					"parameters": {
+						"property-name": "\"font-weight\"",
+						"value": "\"bold\""
 					}
 				}
 			],
@@ -184,6 +202,74 @@
 					"sid": 155041398845432
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "SaveButton",
+					"sid": 688328332576057
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 320000430329839,
+					"parameters": {
+						"key": "\"level\"",
+						"value": "playerLevel"
+					}
+				}
+			],
+			"sid": 128958786453665
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "LoadButton",
+					"sid": 528682731473413
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 599391758709017,
+					"parameters": {
+						"key": "\"level\""
+					}
+				}
+			],
+			"sid": 405186854823473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 582330299218139,
+					"parameters": {
+						"key": "\"level\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 327747771973576,
+					"parameters": {
+						"variable": "playerLevel",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 604001245032951
 		}
 	],
 	"sid": 293294515745621

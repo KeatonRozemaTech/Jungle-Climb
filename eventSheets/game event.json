@@ -1076,6 +1076,33 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
+									"sid": 264510417527615,
+									"parameters": {
+										"variable": "playerLevel",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 148678302746467,
+									"parameters": {
+										"variable": "playerLevel",
+										"value": "4"
+									}
+								}
+							],
+							"sid": 587357491755077
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
 									"sid": 222319991561331,
 									"parameters": {
 										"variable": "playerLevel",
@@ -2916,10 +2943,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Jewels",
-					"sid": 897670106801330,
+					"sid": 738244145726800,
 					"parameters": {
 						"x": "300",
-						"y": "7200"
+						"y": "7175"
 					}
 				},
 				{
@@ -3204,10 +3231,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Jewels",
-					"sid": 492810969135230,
+					"sid": 904300612784515,
 					"parameters": {
 						"x": "300",
-						"y": "3700"
+						"y": "3675"
 					}
 				},
 				{

@@ -176,6 +176,15 @@
 					"actions": [
 						{
 							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 485408209376291,
+							"parameters": {
+								"property-name": "\"border-width\"",
+								"value": "\"15px\""
+							}
+						},
+						{
+							"id": "set-css-style",
 							"objectClass": "Level2",
 							"sid": 121992407153014,
 							"parameters": {
@@ -212,6 +221,15 @@
 					"actions": [
 						{
 							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 180263744329994,
+							"parameters": {
+								"property-name": "\"border-width\"",
+								"value": "\"15px\""
+							}
+						},
+						{
+							"id": "set-css-style",
 							"objectClass": "Level3",
 							"sid": 493141390358647,
 							"parameters": {
@@ -221,6 +239,33 @@
 						}
 					],
 					"sid": 674369064058749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 960132834365867,
+							"parameters": {
+								"variable": "playerLevel",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 286983094372338,
+							"parameters": {
+								"property-name": "\"border-width\"",
+								"value": "\"15px\""
+							}
+						}
+					],
+					"sid": 983456576343208
 				}
 			]
 		}

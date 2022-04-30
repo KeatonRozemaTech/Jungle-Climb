@@ -917,8 +917,8 @@
 					"world": {
 						"x": 1158,
 						"y": 426,
-						"width": 51.2,
-						"height": 51.2,
+						"width": 128,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1320,9 +1320,9 @@
 						"bold": true,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -1335,8 +1335,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 464,
-						"y": -169,
+						"x": -732,
+						"y": -51,
 						"width": 350,
 						"height": 47,
 						"originX": 0,

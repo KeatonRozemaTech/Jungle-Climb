@@ -12,6 +12,8 @@
 		"Level2",
 		"Level3",
 		"playagain",
-		"Website"
+		"Website",
+		"SaveButton",
+		"LoadButton"
 	]
 }

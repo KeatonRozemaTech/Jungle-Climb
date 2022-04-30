@@ -168,10 +168,10 @@
 					}
 				},
 				{
-					"type": "HelpButton",
+					"type": "SaveButton",
 					"properties": {
 						"type": "button",
-						"text": "SAVE GAME",
+						"text": "SAVE",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -198,10 +198,10 @@
 					}
 				},
 				{
-					"type": "HelpButton",
+					"type": "LoadButton",
 					"properties": {
 						"type": "button",
-						"text": "LOAD GAME",
+						"text": "LOAD",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,

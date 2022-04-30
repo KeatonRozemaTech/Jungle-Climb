@@ -132,6 +132,16 @@
 			"sid": 240503944300469
 		},
 		{
+			"eventType": "variable",
+			"name": "storyPlayed",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 135450012984479
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controls",

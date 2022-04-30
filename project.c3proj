@@ -157,7 +157,8 @@
 			"Clife",
 			"Lava",
 			"WinBackground",
-			"LocalStorage"
+			"LocalStorage",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -259,7 +260,8 @@
 			"Help Screen",
 			"Level Select",
 			"Game Over",
-			"Victory Page"
+			"Victory Page",
+			"Story Page"
 		],
 		"subfolders": []
 	},
@@ -270,7 +272,8 @@
 			"Help Event",
 			"Level Select Event",
 			"Game Over Event",
-			"Victory Condition"
+			"Victory Condition",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},

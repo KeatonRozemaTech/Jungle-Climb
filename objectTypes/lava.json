@@ -14,11 +14,9 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-<<<<<<< HEAD
-		"imageSpriteId": 9897816,
-=======
+
 		"imageSpriteId": 1338950,
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
+
 		"useCollisionPoly": true
 	}
 }

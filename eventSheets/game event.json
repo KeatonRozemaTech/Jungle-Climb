@@ -1494,17 +1494,6 @@
 								"y": "Clife.y",
 								"mode": "direct"
 							}
-<<<<<<< HEAD
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "Dragon",
-							"sid": 336780616400819,
-							"parameters": {
-								"angle": "360"
-							}
-=======
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 						}
 					],
 					"sid": 608964208252910,
@@ -1530,17 +1519,8 @@
 									"objectClass": "Dragon",
 									"sid": 645916383857678,
 									"behaviorType": "MoveTo"
-<<<<<<< HEAD
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "Dragon",
-									"sid": 579864664351396,
-									"parameters": {
-										"angle": "360"
-									}
-=======
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
+
+
 								}
 							],
 							"sid": 299763377913152
@@ -2311,14 +2291,12 @@
 						},
 						{
 							"id": "destroy",
-<<<<<<< HEAD
-=======
+
 							"objectClass": "Rock",
 							"sid": 206108477169142
 						},
 						{
 							"id": "destroy",
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 							"objectClass": "PowerUps",
 							"sid": 513791262067788
 						},
@@ -2978,17 +2956,11 @@
 				{
 					"id": "set-position",
 					"objectClass": "Jewels",
-<<<<<<< HEAD
-					"sid": 897670106801330,
-					"parameters": {
-						"x": "300",
-						"y": "7200"
-=======
+
 					"sid": 738244145726800,
 					"parameters": {
 						"x": "300",
 						"y": "7175"
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
 					}
 				},
 				{
@@ -3213,21 +3185,7 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-<<<<<<< HEAD
-					"sid": 413458342079667,
-					"parameters": {
-						"object-to-create": "Snake",
-						"layer": "1",
-						"x": "542",
-						"y": "12012",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-=======
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
+
 					"sid": 323379661153302,
 					"parameters": {
 						"object-to-create": "Rat",
@@ -3286,7 +3244,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 117369447655645,
@@ -3421,14 +3378,7 @@
 					"parameters": {
 						"x": "300",
 						"y": "3700"
-=======
-					"id": "set-position",
-					"objectClass": "Jewels",
-					"sid": 904300612784515,
-					"parameters": {
-						"x": "300",
-						"y": "3675"
->>>>>>> 0bb5e3b30f685b116b7fbd78d0f27b0ccfc42d58
+
 					}
 				},
 				{

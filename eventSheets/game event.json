@@ -1046,6 +1046,14 @@
 					],
 					"actions": [
 						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 412486317861883,
+							"parameters": {
+								"tag": "\"music\""
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 526514135986659,
@@ -1069,6 +1077,14 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 546063175723162,
+							"parameters": {
+								"tag": "\"music\""
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -1519,8 +1535,6 @@
 									"objectClass": "Dragon",
 									"sid": 645916383857678,
 									"behaviorType": "MoveTo"
-
-
 								}
 							],
 							"sid": 299763377913152
@@ -2291,7 +2305,6 @@
 						},
 						{
 							"id": "destroy",
-
 							"objectClass": "Rock",
 							"sid": 206108477169142
 						},
@@ -2956,7 +2969,6 @@
 				{
 					"id": "set-position",
 					"objectClass": "Jewels",
-
 					"sid": 738244145726800,
 					"parameters": {
 						"x": "300",
@@ -3185,7 +3197,6 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-
 					"sid": 323379661153302,
 					"parameters": {
 						"object-to-create": "Rat",
@@ -3378,7 +3389,6 @@
 					"parameters": {
 						"x": "300",
 						"y": "3700"
-
 					}
 				},
 				{
@@ -3391,6 +3401,30 @@
 				}
 			],
 			"sid": 899898067810989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 369260530073557
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 807448720997248,
+					"parameters": {
+						"audio-file": "soundtrack",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
+			"sid": 985450771234700
 		}
 	],
 	"sid": 582206567344910

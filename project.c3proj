@@ -16,6 +16,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
 			"author": "Scirra",
@@ -64,8 +72,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -74,14 +82,6 @@
 			"type": "plugin",
 			"id": "LocalStorage",
 			"name": "Local storage",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -152,17 +152,17 @@
 		},
 		{
 			"type": "effect",
-			"id": "setcolor",
-			"name": "Set color",
-			"author": "Scirra",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "effect",
-			"id": "water",
-			"name": "Water",
-			"author": "Viktor Korsun",
+			"id": "setcolor",
+			"name": "Set color",
+			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		}
@@ -170,11 +170,7 @@
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife",
-			"Lava",
-			"LocalStorage",
-			"NewLava",
-			"Audio"
+			"Clife"
 		],
 		"subfolders": [
 			{
@@ -201,20 +197,21 @@
 					"Bat",
 					"Snake",
 					"Rat",
-					"Rock"
+					"Rock",
+					"Lava"
 				],
 				"subfolders": [],
 				"name": "Enemies"
 			},
 			{
 				"items": [
-					"PlatformsSolid",
+					"Level_1",
 					"Background",
-					"PlatformsSolid2",
-					"PlatformsSolid3"
+					"Level_2",
+					"Level_3"
 				],
 				"subfolders": [],
-				"name": "Platforms"
+				"name": "Levels"
 			},
 			{
 				"items": [
@@ -243,7 +240,9 @@
 					"Keyboard",
 					"Mouse",
 					"PowerSlot",
-					"Browser"
+					"Browser",
+					"Audio",
+					"LocalStorage"
 				],
 				"subfolders": [],
 				"name": "UI"
@@ -256,7 +255,7 @@
 					"BackToLevels"
 				],
 				"subfolders": [],
-				"name": "Game End"
+				"name": "End Condition"
 			}
 		]
 	},

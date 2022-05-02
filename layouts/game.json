@@ -70,7 +70,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PlatformsSolid",
+					"type": "Level_1",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 96,
@@ -393,8 +393,8 @@
 						}
 					},
 					"world": {
-						"x": 1568,
-						"y": 4322,
+						"x": -2830,
+						"y": 3216,
 						"width": 70.5,
 						"height": 66,
 						"originX": 0.5,
@@ -765,7 +765,7 @@
 					}
 				},
 				{
-					"type": "PlatformsSolid2",
+					"type": "Level_2",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 96,
@@ -818,8 +818,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -2395,
-						"y": -217,
+						"x": -2774,
+						"y": -155,
 						"width": 2600,
 						"height": 14954,
 						"originX": 0,
@@ -834,7 +834,7 @@
 					}
 				},
 				{
-					"type": "PlatformsSolid3",
+					"type": "Level_3",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 96,
@@ -887,8 +887,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 0,
-						"y": 3200,
+						"x": -17,
+						"y": 2660,
 						"width": 2600,
 						"height": 14954,
 						"originX": 0,
@@ -1046,50 +1046,6 @@
 					}
 				},
 				{
-					"type": "PlayerCapsule",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Main",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 56,
-					"instanceVariables": {},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 1300,
-						"y": 6955,
-						"width": 102.4,
-						"height": 102.4,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
 					"type": "Clife",
 					"properties": {
 						"initially-visible": true,
@@ -1197,8 +1153,8 @@
 						}
 					},
 					"world": {
-						"x": -1163,
-						"y": 3010,
+						"x": -2922,
+						"y": 2737,
 						"width": 102.4,
 						"height": 102.4,
 						"originX": 0.5,
@@ -1210,7 +1166,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 5
 					}
 				},
 				{
@@ -1453,35 +1409,6 @@
 							1,
 							1
 						]
-					}
-				},
-				{
-					"type": "NewLava",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 42,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -4072,
-						"y": 3717,
-						"width": 300,
-						"height": 300,
-						"originX": 0.619140625,
-						"originY": 0.619140625,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				}
 			],

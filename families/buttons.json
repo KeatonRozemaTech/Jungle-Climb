@@ -11,11 +11,10 @@
 		"Level1",
 		"Level2",
 		"Level3",
-		"playagain",
-
+		"NextLevel",
 		"Website",
 		"SaveButton",
-		"LoadButton"
-
+		"LoadButton",
+		"BackToLevels"
 	]
 }

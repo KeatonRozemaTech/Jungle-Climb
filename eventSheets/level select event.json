@@ -151,12 +151,7 @@
 					"sid": 833723530948133
 				}
 			],
-			"actions": [
-				{
-					"callFunction": "Button CSS",
-					"sid": 407715749513764
-				}
-			],
+			"actions": [],
 			"sid": 993680775124043,
 			"children": [
 				{
@@ -174,6 +169,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Button CSS",
+							"sid": 718854978656601
+						},
 						{
 							"id": "set-css-style",
 							"objectClass": "Level1",
@@ -220,6 +219,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Button CSS",
+							"sid": 980335016115288
+						},
+						{
 							"id": "set-css-style",
 							"objectClass": "Level2",
 							"sid": 180263744329994,
@@ -256,6 +259,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Button CSS",
+							"sid": 844971573722484
+						},
+						{
 							"id": "set-css-style",
 							"objectClass": "Level3",
 							"sid": 286983094372338,
@@ -266,6 +273,55 @@
 						}
 					],
 					"sid": 983456576343208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 520232752631546,
+							"parameters": {
+								"variable": "playerLevel",
+								"comparison": 1,
+								"value": "3 | 2 | 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Button CSS",
+							"sid": 656072277177194
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 610834552966788,
+							"parameters": {
+								"property-name": "\"border-width\"",
+								"value": "\"15px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 744939624719928,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#4f4f4f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 137006621344775,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#4f4f4f\""
+							}
+						}
+					],
+					"sid": 422220667905990
 				}
 			]
 		}

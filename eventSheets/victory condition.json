@@ -6,21 +6,51 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "playagain",
+					"objectClass": "NextLevel",
 					"sid": 657250099071438
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 114831008723505,
+					"parameters": {
+						"variable": "Levels",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 783368024665787,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 697693446035051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BackToLevels",
+					"sid": 424384452830975
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 439855433433838,
+					"sid": 724406202689946,
 					"parameters": {
 						"layout": "Level Select"
 					}
 				}
 			],
-			"sid": 697693446035051
+			"sid": 287876162204185
 		},
 		{
 			"eventType": "block",
@@ -38,6 +68,92 @@
 				}
 			],
 			"sid": 739359905234691
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 430540042426102,
+					"parameters": {
+						"variable": "Levels",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "NextLevel",
+					"sid": 432247188039640,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Victory",
+					"sid": 812337871625972,
+					"parameters": {
+						"text": "\"The three jewels have been collected and returned! You have restored peace, and saved the world!\""
+					}
+				}
+			],
+			"sid": 718668539479810
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 816686306098502,
+					"parameters": {
+						"variable": "Levels",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Victory",
+					"sid": 375086618469144,
+					"parameters": {
+						"text": "\"The Plant Jewel has been collected! Now the over growing plants will be subsided... but it's too late. Unless you collect the last jewel in time, the world will drought and there will be no life left to save!\""
+					}
+				}
+			],
+			"sid": 872184456929757
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 972196291357795,
+					"parameters": {
+						"variable": "Levels",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Victory",
+					"sid": 551566873893010,
+					"parameters": {
+						"text": "\"You have collected the rotational jewel! The world will be more in your favor and more gadgets will be found for your aid in saving the world.\""
+					}
+				}
+			],
+			"sid": 587328013105590
 		}
 	],
 	"sid": 536870899942076

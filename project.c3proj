@@ -157,6 +157,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "zaq4crkgrqq",
@@ -164,9 +172,8 @@
 		"items": [
 			"Clife",
 			"Lava",
-			"WinBackground",
 			"LocalStorage",
-			"Sprite",
+			"NewLava",
 			"Audio"
 		],
 		"subfolders": [
@@ -245,7 +252,8 @@
 				"items": [
 					"Victory",
 					"GameOver",
-					"playagain"
+					"NextLevel",
+					"BackToLevels"
 				],
 				"subfolders": [],
 				"name": "Game End"

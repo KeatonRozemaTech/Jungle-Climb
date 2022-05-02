@@ -5,25 +5,8 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 177270046569956
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "Button CSS",
-					"sid": 435415400439844
-				}
-			],
-			"sid": 629776128257850
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-clicked",
-					"objectClass": "playagain",
+					"objectClass": "NextLevel",
 					"sid": 756001915965152
 				}
 			],
@@ -31,13 +14,34 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 167091237361585,
+					"sid": 886317160783344,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 931745853552214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BackToLevels",
+					"sid": 236652526180764
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 654742213654659,
 					"parameters": {
 						"layout": "Level Select"
 					}
 				}
 			],
-			"sid": 931745853552214
+			"sid": 816401580468019
 		},
 		{
 			"eventType": "block",
@@ -51,8 +55,8 @@
 			"actions": [
 				{
 					"id": "set-css-style",
-					"objectClass": "playagain",
-					"sid": 821917662365340,
+					"objectClass": "Buttons",
+					"sid": 937886873607867,
 					"parameters": {
 						"property-name": "\"background-color\"",
 						"value": "\"#ed3300\""
@@ -60,8 +64,8 @@
 				},
 				{
 					"id": "set-css-style",
-					"objectClass": "playagain",
-					"sid": 304920789151682,
+					"objectClass": "Buttons",
+					"sid": 837727681083909,
 					"parameters": {
 						"property-name": "\"border-radius\"",
 						"value": "\"5px\""
@@ -69,8 +73,8 @@
 				},
 				{
 					"id": "set-css-style",
-					"objectClass": "playagain",
-					"sid": 712647458689623,
+					"objectClass": "Buttons",
+					"sid": 818846605387335,
 					"parameters": {
 						"property-name": "\"font-size\"",
 						"value": "\"30px\""
@@ -78,8 +82,8 @@
 				},
 				{
 					"id": "set-css-style",
-					"objectClass": "playagain",
-					"sid": 781789356162958,
+					"objectClass": "Buttons",
+					"sid": 473841584542640,
 					"parameters": {
 						"property-name": "\"text-align\"",
 						"value": "\"center\""
@@ -87,11 +91,29 @@
 				},
 				{
 					"id": "set-css-style",
-					"objectClass": "playagain",
-					"sid": 199241337458626,
+					"objectClass": "Buttons",
+					"sid": 754918782542600,
 					"parameters": {
 						"property-name": "\"font-weight\"",
 						"value": "\"bolder\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 794361257900201,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"5px solid black\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Lava",
+					"sid": 937898829123615,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"lava\""
 					}
 				}
 			],

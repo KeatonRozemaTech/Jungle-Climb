@@ -5,18 +5,21 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "water",
+			"name": "lava"
+		}
+	],
 	"image": {
-		"width": 128,
-		"height": 128,
+		"width": 300,
+		"height": 300,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-
-		"imageSpriteId": 1338950,
-
+		"imageSpriteId": 9668754,
 		"useCollisionPoly": true
 	}
 }

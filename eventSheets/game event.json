@@ -93,16 +93,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Mobile",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 922885953781400
-		},
-		{
-			"eventType": "variable",
 			"name": "LavaAcc",
 			"type": "number",
 			"initialValue": "1",
@@ -148,28 +138,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 251600384910624
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 853448997801202,
-							"parameters": {
-								"variable": "speed",
-								"value": "400"
-							}
-						}
-					],
-					"sid": 597619810839614
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -542,6 +510,28 @@
 					],
 					"sid": 886303332800839,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 152741006116629
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 383121591651263,
+							"parameters": {
+								"variable": "speed",
+								"value": "400"
+							}
+						}
+					],
+					"sid": 304625122774900
 				}
 			],
 			"sid": 425757350907571

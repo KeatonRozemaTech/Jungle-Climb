@@ -45,7 +45,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 16,
 					"instanceVariables": {},
@@ -75,7 +76,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 20,
 					"instanceVariables": {},
@@ -105,7 +107,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 36,
 					"instanceVariables": {},
@@ -177,7 +180,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 37,
 					"instanceVariables": {},
@@ -207,7 +211,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 38,
 					"instanceVariables": {},

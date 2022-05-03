@@ -87,7 +87,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 22,
 					"instanceVariables": {},

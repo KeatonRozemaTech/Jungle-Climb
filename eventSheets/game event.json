@@ -93,16 +93,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Mobile",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 922885953781400
-		},
-		{
-			"eventType": "variable",
 			"name": "LavaAcc",
 			"type": "number",
 			"initialValue": "1",
@@ -148,28 +138,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 251600384910624
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 853448997801202,
-							"parameters": {
-								"variable": "speed",
-								"value": "400"
-							}
-						}
-					],
-					"sid": 597619810839614
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -542,6 +510,28 @@
 					],
 					"sid": 886303332800839,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 152741006116629
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 383121591651263,
+							"parameters": {
+								"variable": "speed",
+								"value": "400"
+							}
+						}
+					],
+					"sid": 304625122774900
 				}
 			],
 			"sid": 425757350907571
@@ -2867,7 +2857,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "13670",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2879,7 +2870,8 @@
 								"layer": "1",
 								"x": "1500",
 								"y": "13170",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2891,7 +2883,8 @@
 								"layer": "1",
 								"x": "1110",
 								"y": "12590",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2903,7 +2896,8 @@
 								"layer": "1",
 								"x": "1130",
 								"y": "9170",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2915,7 +2909,8 @@
 								"layer": "1",
 								"x": "1000",
 								"y": "7050",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2927,7 +2922,8 @@
 								"layer": "1",
 								"x": "1500",
 								"y": "9000",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2939,7 +2935,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "5300",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2951,7 +2948,8 @@
 								"layer": "1",
 								"x": "1853",
 								"y": "11230",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2963,7 +2961,8 @@
 								"layer": "1",
 								"x": "2500",
 								"y": "4900",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2975,7 +2974,8 @@
 								"layer": "1",
 								"x": "1300",
 								"y": "3500",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2987,7 +2987,8 @@
 								"layer": "1",
 								"x": "1300",
 								"y": "2400",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -2999,7 +3000,8 @@
 								"layer": "1",
 								"x": "150",
 								"y": "13630",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3041,7 +3043,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "12000",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3053,7 +3056,8 @@
 								"layer": "1",
 								"x": "1500",
 								"y": "10000",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3065,7 +3069,8 @@
 								"layer": "1",
 								"x": "1110",
 								"y": "11400",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3077,7 +3082,8 @@
 								"layer": "1",
 								"x": "1130",
 								"y": "9170",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3089,7 +3095,8 @@
 								"layer": "1",
 								"x": "1000",
 								"y": "7050",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3101,7 +3108,8 @@
 								"layer": "1",
 								"x": "1500",
 								"y": "7050",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3113,7 +3121,8 @@
 								"layer": "1",
 								"x": "750",
 								"y": "7500",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3125,7 +3134,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "7050",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3137,7 +3147,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "5300",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3149,7 +3160,8 @@
 								"layer": "1",
 								"x": "2500",
 								"y": "4900",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3161,7 +3173,8 @@
 								"layer": "1",
 								"x": "1300",
 								"y": "3500",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3173,7 +3186,8 @@
 								"layer": "1",
 								"x": "1300",
 								"y": "2400",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3185,7 +3199,8 @@
 								"layer": "1",
 								"x": "2000",
 								"y": "11887",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3227,7 +3242,8 @@
 								"layer": "1",
 								"x": "645",
 								"y": "13300",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3239,7 +3255,8 @@
 								"layer": "1",
 								"x": "2033",
 								"y": "11000",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3251,7 +3268,8 @@
 								"layer": "1",
 								"x": "1853",
 								"y": "11230",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3263,7 +3281,8 @@
 								"layer": "1",
 								"x": "1300",
 								"y": "4000",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3275,7 +3294,8 @@
 								"layer": "0",
 								"x": "2200",
 								"y": "5500",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3287,7 +3307,8 @@
 								"layer": "1",
 								"x": "1100",
 								"y": "7126",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3299,7 +3320,8 @@
 								"layer": "1",
 								"x": "603",
 								"y": "3737",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3311,7 +3333,8 @@
 								"layer": "1",
 								"x": "513",
 								"y": "8129",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3323,7 +3346,8 @@
 								"layer": "1",
 								"x": "383",
 								"y": "8961",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3335,7 +3359,8 @@
 								"layer": "1",
 								"x": "830",
 								"y": "12575",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3347,7 +3372,8 @@
 								"layer": "1",
 								"x": "52",
 								"y": "4939",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3359,7 +3385,8 @@
 								"layer": "1",
 								"x": "548",
 								"y": "6176",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3371,7 +3398,8 @@
 								"layer": "1",
 								"x": "671",
 								"y": "10817",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3383,7 +3411,8 @@
 								"layer": "1",
 								"x": "723",
 								"y": "10256",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3403,7 +3432,8 @@
 								"layer": "1",
 								"x": "175",
 								"y": "7480",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3415,7 +3445,8 @@
 								"layer": "1",
 								"x": "1380",
 								"y": "10272",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{

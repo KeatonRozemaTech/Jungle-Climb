@@ -28,6 +28,11 @@
 					"parameters": {
 						"layout": "Start Screen"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "levelStory",
+					"sid": 427433809223504
 				}
 			],
 			"sid": 875955276164701

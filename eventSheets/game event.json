@@ -1550,6 +1550,56 @@
 								}
 							],
 							"sid": 299763377913152
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Clife",
+									"sid": 634096443709824,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "Dragon.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Dragon",
+									"sid": 788627200071628,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 546884984531823
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Clife",
+									"sid": 611001900290407,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "Dragon.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Dragon",
+									"sid": 938988147028627,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 532426738058846
 						}
 					]
 				},
@@ -2613,6 +2663,110 @@
 						}
 					],
 					"sid": 909991187634776
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 284648731976738,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "PowerupInfo",
+							"sid": 332833761920302,
+							"parameters": {
+								"text": "\"Power Up: None\""
+							}
+						}
+					],
+					"sid": 245754307985782
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 781528273462368,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"Spring\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "PowerupInfo",
+							"sid": 279986890069984,
+							"parameters": {
+								"text": "\"Power Up: Spring; \"&round(PowerTime)&\" seconds remaining\""
+							}
+						}
+					],
+					"sid": 934694120676824
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 730084559282725,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"Stone\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "PowerupInfo",
+							"sid": 437471821348905,
+							"parameters": {
+								"text": "\"Power Up: RockSheild; \"&round(PowerTime)&\" seconds remaining\""
+							}
+						}
+					],
+					"sid": 960454611051508
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 799075642408783,
+							"parameters": {
+								"variable": "PowerUps",
+								"comparison": 0,
+								"value": "\"Leaf\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "PowerupInfo",
+							"sid": 597910152513556,
+							"parameters": {
+								"text": "\"Power Up: Leafbrella; \"&round(PowerTime)&\" seconds remaining\""
+							}
+						}
+					],
+					"sid": 343658543811073
 				}
 			],
 			"sid": 648069928574174

@@ -16,10 +16,10 @@
 			"actions": [
 				{
 					"id": "set-y",
-					"objectClass": "Text",
+					"objectClass": "storytext",
 					"sid": 547422128794300,
 					"parameters": {
-						"y": "Text.Y - 1"
+						"y": "storytext.Y - 1"
 					}
 				},
 				{
@@ -38,7 +38,7 @@
 					"objectClass": "System",
 					"sid": 567573439970207,
 					"parameters": {
-						"first-value": "Text.Y",
+						"first-value": "storytext.Y",
 						"comparison": 3,
 						"second-value": "-2150"
 					}

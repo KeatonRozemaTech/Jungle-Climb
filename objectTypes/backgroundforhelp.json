@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "BackgroundforHelp",
 	"plugin-id": "Sprite",
-	"sid": 645200882376871,
+	"sid": 822404530651989,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,31 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
-						"originX": 0.619140625,
-						"originY": 0.619140625,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3464395,
-						"collisionPoly": {
-							"points": [
-								0.375,
-								0.375,
-								0.625,
-								0.375,
-								0.625,
-								0.625,
-								0.375,
-								0.625
-							]
-						},
+						"imageSpriteId": 9409970,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 127699289414808,
+				"sid": 592393640716863,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

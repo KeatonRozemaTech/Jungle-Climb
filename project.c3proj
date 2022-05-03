@@ -170,8 +170,7 @@
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife",
-			"Text"
+			"Clife"
 		],
 		"subfolders": [
 			{
@@ -241,10 +240,12 @@
 					"Timer",
 					"Keyboard",
 					"Mouse",
-					"PowerSlot",
 					"Browser",
 					"Audio",
-					"LocalStorage"
+					"LocalStorage",
+					"BackgroundforHelp",
+					"PowerupInfo",
+					"storytext"
 				],
 				"subfolders": [],
 				"name": "UI"

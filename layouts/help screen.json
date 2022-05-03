@@ -36,48 +36,6 @@
 					}
 				},
 				{
-					"type": "HelpText",
-					"properties": {
-						"text": "Use W to jump, double click the jump key to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
-						"enable-bbcode": true,
-						"font": "Comic Sans MS",
-						"size": 55,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 21,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 43,
-						"y": 233,
-						"width": 1563,
-						"height": 348,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Exitback",
 					"properties": {
 						"type": "button",
@@ -109,37 +67,24 @@
 					}
 				},
 				{
-					"type": "HelpText",
+					"type": "BackgroundforHelp",
 					"properties": {
-						"text": "Collect power ups for new abilities such as increased jumping and invulnerability.",
-						"enable-bbcode": true,
-						"font": "Comic Sans MS",
-						"size": 55,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 40,
+					"uid": 49,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1017,
-						"y": 600,
-						"width": 1563,
-						"height": 246,
-						"originX": 0,
-						"originY": 0,
+						"x": 1250,
+						"y": 750,
+						"width": 2500,
+						"height": 1500,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -189,7 +134,91 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "HelpText",
+					"properties": {
+						"text": "Collect power ups for new abilities such as increased jumping and invulnerability.",
+						"enable-bbcode": true,
+						"font": "Comic Sans MS",
+						"size": 55,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 40,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 941,
+						"y": 600,
+						"width": 1563,
+						"height": 246,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "HelpText",
+					"properties": {
+						"text": "Use W to jump, double click the jump key to double jump, A to move left, D to move right, S to hard stomp, and Shift to run. You may also use the directional Arrow Keys.",
+						"enable-bbcode": true,
+						"font": "Comic Sans MS",
+						"size": 55,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 43,
+						"y": 233,
+						"width": 1563,
+						"height": 348,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
 					}
 				}
 			],

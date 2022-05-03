@@ -875,7 +875,7 @@
 					"behaviors": {
 						"Platform": {
 							"properties": {
-								"max-speed": 75,
+								"max-speed": 82.5,
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"jump-strength": 650,
@@ -1194,10 +1194,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 272,
-						"y": 33,
-						"width": 350,
-						"height": 128,
+						"x": 173.23293980432084,
+						"y": 20,
+						"width": 210,
+						"height": 76.8,
 						"originX": 0.09508571428571429,
 						"originY": -0.045454545454545456,
 						"color": [
@@ -1253,35 +1253,6 @@
 					}
 				},
 				{
-					"type": "PowerSlot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 19,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 114,
-						"y": 1388,
-						"width": 120,
-						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Play",
 					"properties": {
 						"type": "button",
@@ -1317,7 +1288,7 @@
 					"properties": {
 						"type": "button",
 						"text": "| |",
-						"tooltip": "",
+						"tooltip": "Pause",
 						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
@@ -1341,6 +1312,48 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "PowerupInfo",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Papyrus",
+						"size": 45,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 19,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 580.5,
+						"y": 1358,
+						"width": 1339,
+						"height": 114,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

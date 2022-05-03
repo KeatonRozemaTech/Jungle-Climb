@@ -5,7 +5,79 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 42,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1250,
+						"y": 750,
+						"width": 2500,
+						"height": 1500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "Once upon a time...\n\nThe world was at peace, humans \nand animals found common ground.\n\nThen, one day, a group of miners\ndug deep into the Earth, \nreleasing the three jewels of\nlife: the Rotation Jewel, the \nPlant Jewel, and finally, the\nAnimal Jewel.\n\nTo help the world, lead miner,\nClife, promised to bring peace\nto the land by bringing the three\njewels back to their place.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 60,
+						"line-height": 50,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 56,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 614.5,
+						"y": 1524,
+						"width": 1269.7986554509991,
+						"height": 4568,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 5
+					}
+				}
+			],
 			"sid": 821801356940420,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -38,11 +110,11 @@
 	"sid": 362178119935858,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 5000,
-	"height": 3000,
+	"width": 2000,
+	"height": 1500,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "Story Event"
 }

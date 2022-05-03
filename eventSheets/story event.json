@@ -1,0 +1,82 @@
+{
+	"name": "Story Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 737899697811370,
+					"parameters": {
+						"interval-seconds": ".011"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Text",
+					"sid": 547422128794300,
+					"parameters": {
+						"y": "Text.Y - 1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "levelStory",
+					"sid": 353002394519209
+				}
+			],
+			"sid": 121286750846240
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 567573439970207,
+					"parameters": {
+						"first-value": "Text.Y",
+						"comparison": 3,
+						"second-value": "-2150"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 138089361623697,
+					"parameters": {
+						"variable": "Levels",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 143965418404303,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 519352209004683
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 804211610444051
+				}
+			],
+			"actions": [],
+			"sid": 853905809337014
+		}
+	],
+	"sid": 823888946098759
+}

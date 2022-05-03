@@ -170,7 +170,8 @@
 	"uniqueId": "zaq4crkgrqq",
 	"objectTypes": {
 		"items": [
-			"Clife"
+			"Clife",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -226,7 +227,8 @@
 					"Website",
 					"Title",
 					"SaveButton",
-					"LoadButton"
+					"LoadButton",
+					"levelStory"
 				],
 				"subfolders": [],
 				"name": "Start"
@@ -289,7 +291,7 @@
 			"Level Select Event",
 			"Game Over Event",
 			"Victory Condition",
-			"Event sheet 1"
+			"Story Event"
 		],
 		"subfolders": []
 	},

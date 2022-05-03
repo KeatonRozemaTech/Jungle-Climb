@@ -15,6 +15,7 @@
 		"Website",
 		"SaveButton",
 		"LoadButton",
-		"BackToLevels"
+		"BackToLevels",
+		"levelStory"
 	]
 }

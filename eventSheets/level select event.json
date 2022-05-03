@@ -146,6 +146,36 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-clicked",
+					"objectClass": "levelStory",
+					"sid": 283720488620510
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 687005100874511,
+					"parameters": {
+						"variable": "Levels",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 933169345101525,
+					"parameters": {
+						"layout": "Story Page"
+					}
+				}
+			],
+			"sid": 545072210532909
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 833723530948133

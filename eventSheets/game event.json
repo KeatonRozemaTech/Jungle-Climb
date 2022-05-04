@@ -3646,6 +3646,29 @@
 						"volume": "0",
 						"tag-optional": "\"music\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "levelStory",
+					"sid": 456606053289208
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 647107449362550,
+					"parameters": {
+						"variable": "PowerUps",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 299526503066685,
+					"parameters": {
+						"variable": "PowerTime",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 225510876184042

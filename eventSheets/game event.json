@@ -2962,11 +2962,6 @@
 									"sid": 362329138758138
 								},
 								{
-									"id": "destroy",
-									"objectClass": "Rock",
-									"sid": 200320997377309
-								},
-								{
 									"id": "set-animation-frame",
 									"objectClass": "Background",
 									"sid": 708686180501116,

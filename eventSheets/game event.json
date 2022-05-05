@@ -65,7 +65,7 @@
 			"eventType": "variable",
 			"name": "Levels",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "2",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

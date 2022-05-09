@@ -993,7 +993,7 @@
 								"acceleration": 3000,
 								"deceleration": 1000,
 								"jump-strength": 1100,
-								"gravity": 2000,
+								"gravity": 1500,
 								"max-fall-speed": 5000,
 								"double-jump": true,
 								"jump-sustain": 0,

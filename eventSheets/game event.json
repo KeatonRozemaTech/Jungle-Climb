@@ -144,68 +144,6 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 293930902712247,
-							"parameters": {
-								"key": 16
-							},
-							"isInverted": true
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 262269950019913,
-							"parameters": {
-								"key": 83
-							},
-							"isInverted": true
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 213126113270154,
-							"parameters": {
-								"key": 40
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 934332968917856,
-							"parameters": {
-								"variable": "speed",
-								"value": "400"
-							}
-						},
-						{
-							"id": "set-acceleration",
-							"objectClass": "Clife",
-							"sid": 586539842562772,
-							"behaviorType": "Platform",
-							"parameters": {
-								"acceleration": "1500"
-							}
-						},
-						{
-							"id": "set-gravity",
-							"objectClass": "Clife",
-							"sid": 310646813512107,
-							"behaviorType": "Platform",
-							"parameters": {
-								"gravity": "1500"
-							}
-						}
-					],
-					"sid": 231064313809400
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
 							"sid": 871099743727814,
 							"parameters": {
 								"key": 40

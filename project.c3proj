@@ -179,7 +179,8 @@
 	"objectTypes": {
 		"items": [
 			"Clife",
-			"Touch"
+			"Touch",
+			"Text"
 		],
 		"subfolders": [
 			{

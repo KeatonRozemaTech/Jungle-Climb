@@ -28,11 +28,6 @@
 					"parameters": {
 						"layout": "Start Screen"
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "levelStory",
-					"sid": 427433809223504
 				}
 			],
 			"sid": 875955276164701
@@ -186,7 +181,106 @@
 					"sid": 833723530948133
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 598020347992636,
+					"parameters": {
+						"text": "playerLevel"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "levelStory",
+					"sid": 522517527493570,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"#0c8717\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Exitback",
+					"sid": 864260697184668,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"#0c8717\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Exitback",
+					"sid": 653953179840996,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"7px solid #1f1f1f\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "levelStory",
+					"sid": 914809000686121,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"7px solid #1f1f1f\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 938951740355052,
+					"parameters": {
+						"property-name": "\"border-radius\"",
+						"value": "\"5px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 805945009899801,
+					"parameters": {
+						"property-name": "\"color\"",
+						"value": "\"white\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 598333487004124,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"1.5em\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 976946475327018,
+					"parameters": {
+						"property-name": "\"text-align\"",
+						"value": "\"center\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 169302193794966,
+					"parameters": {
+						"property-name": "\"font-family\"",
+						"value": "\"'Courier New', monospace\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Buttons",
+					"sid": 355661719647791,
+					"parameters": {
+						"property-name": "\"font-weight\"",
+						"value": "\"bold\""
+					}
+				}
+			],
 			"sid": 993680775124043,
 			"children": [
 				{
@@ -205,16 +299,39 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Button CSS",
-							"sid": 718854978656601
+							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 681506290809472,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#0c8717\""
+							}
 						},
 						{
 							"id": "set-css-style",
 							"objectClass": "Level1",
-							"sid": 485408209376291,
+							"sid": 289323193286342,
 							"parameters": {
-								"property-name": "\"border-width\"",
-								"value": "\"15px\""
+								"property-name": "\"border\"",
+								"value": "\"14px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 815703582711010,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 562242470163707,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
 							}
 						},
 						{
@@ -254,16 +371,48 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Button CSS",
-							"sid": 980335016115288
+							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 864099883971825,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#0c8717\""
+							}
 						},
 						{
 							"id": "set-css-style",
 							"objectClass": "Level2",
-							"sid": 180263744329994,
+							"sid": 437586009964413,
 							"parameters": {
-								"property-name": "\"border-width\"",
-								"value": "\"15px\""
+								"property-name": "\"background-color\"",
+								"value": "\"#0c8717\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 357348148436027,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 505839259967558,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"14px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 632040554774808,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
 							}
 						},
 						{
@@ -294,69 +443,70 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Button CSS",
-							"sid": 844971573722484
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "Level3",
-							"sid": 286983094372338,
-							"parameters": {
-								"property-name": "\"border-width\"",
-								"value": "\"15px\""
-							}
-						}
-					],
-					"sid": 983456576343208
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 520232752631546,
-							"parameters": {
-								"variable": "playerLevel",
-								"comparison": 1,
-								"value": "3 | 2 | 1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "Button CSS",
-							"sid": 656072277177194
-						},
-						{
 							"id": "set-css-style",
 							"objectClass": "Level1",
-							"sid": 610834552966788,
+							"sid": 404052550903651,
 							"parameters": {
-								"property-name": "\"border-width\"",
-								"value": "\"15px\""
+								"property-name": "\"background-color\"",
+								"value": "\"#0c8717\""
 							}
 						},
 						{
 							"id": "set-css-style",
 							"objectClass": "Level2",
-							"sid": 744939624719928,
+							"sid": 587991171562385,
 							"parameters": {
 								"property-name": "\"background-color\"",
-								"value": "\"#4f4f4f\""
+								"value": "\"#0c8717\""
 							}
 						},
 						{
 							"id": "set-css-style",
 							"objectClass": "Level3",
-							"sid": 137006621344775,
+							"sid": 339774332703729,
 							"parameters": {
 								"property-name": "\"background-color\"",
-								"value": "\"#4f4f4f\""
+								"value": "\"#0c8717\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 623630881196378,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"#0c8717\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level1",
+							"sid": 491771358691076,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level2",
+							"sid": 286227921871948,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"7px solid #1f1f1f\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "Level3",
+							"sid": 692303522249149,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"14px solid #1f1f1f\""
 							}
 						}
 					],
-					"sid": 422220667905990
+					"sid": 983456576343208
 				}
 			]
 		}
